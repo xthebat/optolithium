@@ -1,0 +1,60 @@
+[Version]
+1.2.3.4
+
+[Parameters]
+fivebar						;2D Mask Name
+6000.000, 3000.000, -3000.000, -3000.000	;Mask dimensions [top,right,bottom,left] (nm)
+5000.000, 2250.000, -2250.000, -2250.000	;Simulation region [top,right,bottom,left] (nm)
+1.000						;Background intensity transmittance
+0.000						;Background phase (degrees)
+20.000						;critical shape step size for automatic generation of [CSE] data (nm)
+0						;1 = generate new [CSE] data when putting into PROLITH Database
+0						;1 = mask is clean (no overlaps), 0 = clean mask during import
+
+
+[Data]
+Polygon(0.0000, 0.00, 0)
+{
+   -1575.000, 1500.000
+   -1225.000, 1500.000
+   -1225.000, -1500.000
+   -1575.000, -1500.000
+}
+
+
+Polygon(0.0000, 0.00, 0)
+{
+   -875.000, 1500.000
+   -525.000, 1500.000
+   -525.000, -1500.000
+   -875.000, -1500.000
+}
+
+
+Polygon(0.0000, 0.00, 0)
+{
+   -175.000, 4000.000
+   175.000, 4000.000
+   175.000, -1500.000
+   -175.000, -1500.000
+}
+
+
+Polygon(0.0000, 0.00, 0)
+{
+   525.000, 1500.000
+   875.000, 1500.000
+   875.000, -1500.000
+   525.000, -1500.000
+}
+
+
+Polygon(0.0000, 0.00, 0)
+{
+   1225.000, 1500.000
+   1575.000, 1500.000
+   1575.000, -1500.000
+   1225.000, -1500.000
+}
+
+

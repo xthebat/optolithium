@@ -1,0 +1,10 @@
+[Version]
+1.2.3.4
+
+[Parameters]
+Air Vacuum					;Material Name
+
+
+;data in wavelength (nm), n, k
+[Data]
+100.00000  1.00000  0.00000

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48px"
+   height="48px"
+   id="svg3825"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   inkscape:export-filename="/home/batman/projects/Lithography/OptolithiumGui/icons/Numerics.png"
+   inkscape:export-xdpi="45"
+   inkscape:export-ydpi="45"
+   sodipodi:docname="Numerics.svg">
+  <defs
+     id="defs3827">
+    <linearGradient
+       id="linearGradient6389"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#5edd00;stop-opacity:1;"
+         offset="0"
+         id="stop6391" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="envelope"
+       id="path-effect6368"
+       is_visible="true"
+       yy="true"
+       xx="true"
+       bendpath1="m 14.362692,21.5 c 6.391961,1.494955 11.760201,0.737725 17.137308,0"
+       bendpath2="m 31.5,21.5 0,22"
+       bendpath3="m 14.362692,43.5 c 6.195979,1.692402 11.768799,1.203746 17.137308,0"
+       bendpath4="m 14.362692,21.5 0,22"
+       bendpath1-nodetypes="cc"
+       bendpath3-nodetypes="cc" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6345">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6347" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop6349" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6345"
+       id="linearGradient6351"
+       x1="15.027621"
+       y1="33"
+       x2="33.164928"
+       y2="33"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       id="filter6548"
+       inkscape:label="Darken edges"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Darken the edges with an inner blur"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur6550"
+         result="result6"
+         stdDeviation="1.5" />
+      <feComposite
+         id="feComposite6552"
+         in2="result6"
+         operator="atop"
+         in="SourceGraphic"
+         result="result8" />
+      <feComposite
+         id="feComposite6554"
+         in2="SourceAlpha"
+         in="result8"
+         operator="atop"
+         result="result9" />
+    </filter>
+    <filter
+       id="filter6556"
+       inkscape:label="Darken edges"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Darken the edges with an inner blur"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur6558"
+         result="result6"
+         stdDeviation="1.5" />
+      <feComposite
+         id="feComposite6560"
+         in2="result6"
+         operator="atop"
+         in="SourceGraphic"
+         result="result8" />
+      <feComposite
+         id="feComposite6562"
+         in2="SourceAlpha"
+         in="result8"
+         operator="atop"
+         result="result9" />
+    </filter>
+    <filter
+       id="filter6564"
+       inkscape:label="Darken edges"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Darken the edges with an inner blur"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur6566"
+         result="result6"
+         stdDeviation="1.5" />
+      <feComposite
+         id="feComposite6568"
+         in2="result6"
+         operator="atop"
+         in="SourceGraphic"
+         result="result8" />
+      <feComposite
+         id="feComposite6570"
+         in2="SourceAlpha"
+         in="result8"
+         operator="atop"
+         result="result9" />
+    </filter>
+    <filter
+       id="filter6572"
+       inkscape:label="Darken edges"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Darken the edges with an inner blur"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur6574"
+         result="result6"
+         stdDeviation="1.5" />
+      <feComposite
+         id="feComposite6576"
+         in2="result6"
+         operator="atop"
+         in="SourceGraphic"
+         result="result8" />
+      <feComposite
+         id="feComposite6578"
+         in2="SourceAlpha"
+         in="result8"
+         operator="atop"
+         result="result9" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="12.8125"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:snap-global="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="813"
+     inkscape:window-x="0"
+     inkscape:window-y="151"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-page="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3863" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3830">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="5.3073173"
+       y="16"
+       id="text6445"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6447"
+         x="5.3073173"
+         y="16" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="6.5560975"
+       y="42.692684"
+       id="text6449"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6451"
+         x="6.5560975"
+         y="42.692684" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:27.12739372px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#14ff00;fill-opacity:1;stroke:none;filter:url(#filter6564);font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Bold Italic"
+       x="3.5635266"
+       y="44.263096"
+       id="text6476"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.2974391,0,0,1.0199597,-1.5894492,-6.4963795)"><tspan
+         sodipodi:role="line"
+         id="tspan6478"
+         x="3.5635266"
+         y="44.263096">∫</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25.27376175px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;filter:url(#filter6548);font-family:Droid Serif;-inkscape-font-specification:Droid Serif"
+       x="19.362341"
+       y="25.385345"
+       id="text6480"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.2582789,0,0,0.8896182,0.63677496,-3.5832653)"><tspan
+         sodipodi:role="line"
+         id="tspan6482"
+         x="19.362341"
+         y="25.385345">∑</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.49995804px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0001ff;fill-opacity:1;stroke:none;filter:url(#filter6556);font-family:Droid Serif;-inkscape-font-specification:Droid Serif Bold"
+       x="27.457991"
+       y="41.366062"
+       id="text6484"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.0848726,0,0,1.1390848,-2.2577053,-4.4719954)"><tspan
+         sodipodi:role="line"
+         id="tspan6486"
+         x="27.457991"
+         y="41.366062">π</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.73544502000000023px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ecff00;fill-opacity:1;stroke:none;filter:url(#filter6572);font-family:Droid Serif;-inkscape-font-specification:Droid Serif Bold"
+       x="1.8091178"
+       y="19.845438"
+       id="text6488"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.2167563,0,0,1.0658922,-1.0615872,-3.2545685)"><tspan
+         sodipodi:role="line"
+         id="tspan6490"
+         x="1.8091178"
+         y="19.845438">∞</tspan></text>
+  </g>
+</svg>

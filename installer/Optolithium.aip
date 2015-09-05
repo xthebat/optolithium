@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="12.3.1" version="12.3.1" Modules="simple" RootPath="." Language="en" Id="{527E7426-5903-474B-BFD7-8ECF3ED01783}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="gladkikhalexei@gmail.com"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPNOREPAIR" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="icon_1.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://bitbucket.org/gladkikhalexei/optolithium/overview"/>
+    <ROW Property="Manufacturer" Value="Optolithium, inc"/>
+    <ROW Property="ProductCode" Value="1033:{AAF3E491-63F0-4D06-AA69-2EBA121828AC} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Optolithium"/>
+    <ROW Property="ProductVersion" Value="0.3.0" Type="32"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{4B614687-8FB0-4599-9BD8-2CC3EC563821}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Optolithium_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="OPTOLI~1|Optolithium"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="afm_Dir" Directory_Parent="fonts_Dir" DefaultDir="afm"/>
+    <ROW Directory="axes_grid_Dir" Directory_Parent="sample_data_Dir" DefaultDir="AXES_G~1|axes_grid"/>
+    <ROW Directory="data_Dir" Directory_Parent="share_Dir" DefaultDir="data"/>
+    <ROW Directory="dev_models_Dir" Directory_Parent="plugins_Dir" DefaultDir="DEV_MO~1|dev_models"/>
+    <ROW Directory="fonts_Dir" Directory_Parent="mpldata_Dir" DefaultDir="fonts"/>
+    <ROW Directory="icons_Dir" Directory_Parent="APPDIR" DefaultDir="icons"/>
+    <ROW Directory="imageformats_Dir" Directory_Parent="APPDIR" DefaultDir="IMAGEF~1|imageformats"/>
+    <ROW Directory="images_Dir" Directory_Parent="mpldata_Dir" DefaultDir="images"/>
+    <ROW Directory="masks_Dir" Directory_Parent="plugins_Dir" DefaultDir="masks"/>
+    <ROW Directory="misc_Dir" Directory_Parent="share_Dir" DefaultDir="misc"/>
+    <ROW Directory="mpldata_Dir" Directory_Parent="APPDIR" DefaultDir="mpl-data"/>
+    <ROW Directory="pdfcorefonts_Dir" Directory_Parent="fonts_Dir" DefaultDir="PDFCOR~1|pdfcorefonts"/>
+    <ROW Directory="plugins_Dir" Directory_Parent="APPDIR" DefaultDir="plugins"/>
+    <ROW Directory="pupil_filters_Dir" Directory_Parent="plugins_Dir" DefaultDir="PUPIL_~1|pupil_filters"/>
+    <ROW Directory="sample_data_Dir" Directory_Parent="mpldata_Dir" DefaultDir="SAMPLE~1|sample_data"/>
+    <ROW Directory="share_Dir" Directory_Parent="APPDIR" DefaultDir="share"/>
+    <ROW Directory="source_shapes_Dir" Directory_Parent="plugins_Dir" DefaultDir="SOURCE~1|source_shapes"/>
+    <ROW Directory="ttf_Dir" Directory_Parent="fonts_Dir" DefaultDir="ttf"/>
+    <ROW Directory="xhtml_Dir" Directory_Parent="APPDIR" DefaultDir="xhtml"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="About.png" ComponentId="{67CB4E72-E95C-45A5-858B-7048CC412F90}" Directory_="icons_Dir" Attributes="0" KeyPath="About.png" Type="0"/>
+    <ROW Component="CourierBold.afm" ComponentId="{73AE4EC7-E320-47AA-B08C-3C07806ED27A}" Directory_="pdfcorefonts_Dir" Attributes="0" KeyPath="CourierBold.afm" Type="0"/>
+    <ROW Component="Optolithium" ComponentId="{223DBC60-26B9-4997-8ACD-496A71C11B6C}" Directory_="Optolithium_Dir" Attributes="0"/>
+    <ROW Component="ProductInformation" ComponentId="{24217319-6B24-4D0B-9A40-30FA6E51321A}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="QtCore4.dll" ComponentId="{0286B08C-E9E1-489D-982A-8577E72AA0E4}" Directory_="APPDIR" Attributes="0" KeyPath="QtCore4.dll"/>
+    <ROW Component="QtGui4.dll" ComponentId="{406F4368-9146-4C93-AD19-6CD6347EAA4E}" Directory_="APPDIR" Attributes="0" KeyPath="QtGui4.dll"/>
+    <ROW Component="QtNetwork4.dll" ComponentId="{61F3FB95-4787-4DDE-BF21-9C953EF8218D}" Directory_="APPDIR" Attributes="0" KeyPath="QtNetwork4.dll"/>
+    <ROW Component="QtWebKit4.dll" ComponentId="{AB8130F7-923D-4F8D-87E4-D86F77DB9827}" Directory_="APPDIR" Attributes="0" KeyPath="QtWebKit4.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{0F3B2F57-1334-48D1-AEF7-16A23E6F548C}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="_clipper.pyd" ComponentId="{6B7803F3-03B8-4F6A-B052-CE9419529276}" Directory_="APPDIR" Attributes="0" KeyPath="_clipper.pyd" Type="0"/>
+    <ROW Component="aPolysilicon.MAT" ComponentId="{896AB97C-AB00-4AD2-B257-31229F8A9F5C}" Directory_="data_Dir" Attributes="0" KeyPath="aPolysilicon.MAT" Type="0"/>
+    <ROW Component="aapl.csv" ComponentId="{5DA837AF-9822-44A4-B516-C69AB1690F64}" Directory_="sample_data_Dir" Attributes="0" KeyPath="aapl.csv" Type="0"/>
+    <ROW Component="back.png" ComponentId="{5FA29D6A-1238-409C-9802-15C6D804168E}" Directory_="images_Dir" Attributes="0" KeyPath="back.png" Type="0"/>
+    <ROW Component="bivariate_normal.npy" ComponentId="{1E78432E-8DB2-4029-A961-1D65261B06ED}" Directory_="axes_grid_Dir" Attributes="0" KeyPath="bivariate_normal.npy" Type="0"/>
+    <ROW Component="cmb10.ttf" ComponentId="{335EF8AF-5DE6-4CB1-8A91-8423A7D29447}" Directory_="ttf_Dir" Attributes="0" KeyPath="COPYRIGHT.TXT" Type="0"/>
+    <ROW Component="cmex10.afm" ComponentId="{12BF564C-8901-4934-80BB-8B42127A8862}" Directory_="afm_Dir" Attributes="0" KeyPath="cmex10.afm" Type="0"/>
+    <ROW Component="libannular.dll" ComponentId="{4DB1DC43-33E6-4D69-AF5E-14870195B7A3}" Directory_="source_shapes_Dir" Attributes="0" KeyPath="libannular.dll"/>
+    <ROW Component="libcentral_obscuration.dll" ComponentId="{61C008B5-D18A-4B6D-9744-7D172AC1764E}" Directory_="pupil_filters_Dir" Attributes="0" KeyPath="libcentral_obscuration.dll"/>
+    <ROW Component="libcoherent.dll" ComponentId="{FC4F48DE-CC54-4C14-B8DA-2012F6CE1816}" Directory_="source_shapes_Dir" Attributes="0" KeyPath="libcoherent.dll"/>
+    <ROW Component="libconvenient.dll" ComponentId="{C2666FAF-BBFB-4EC0-B679-024ED15FFC66}" Directory_="source_shapes_Dir" Attributes="0" KeyPath="libconvenient.dll"/>
+    <ROW Component="libenhanced.dll" ComponentId="{1B61B3F1-21AD-44DF-8DDA-F9DF7050F007}" Directory_="dev_models_Dir" Attributes="0" KeyPath="libenhanced.dll"/>
+    <ROW Component="libenhanced_notch.dll" ComponentId="{B6C56C1A-129A-4F42-9BD1-C16E9BB40E30}" Directory_="dev_models_Dir" Attributes="0" KeyPath="libenhanced_notch.dll"/>
+    <ROW Component="libfftw33.dll" ComponentId="{D0E0108B-9C58-465E-B267-A0E3F53F404C}" Directory_="APPDIR" Attributes="0" KeyPath="libfftw33.dll"/>
+    <ROW Component="libfiveBarLine.dll" ComponentId="{1BCD3611-D28B-4EA3-B988-B99A8CC261D5}" Directory_="masks_Dir" Attributes="0" KeyPath="libfiveBarLine.dll"/>
+    <ROW Component="libgcc_s_dw21.dll" ComponentId="{4B61B02E-DE04-4916-9527-895F6606540B}" Directory_="APPDIR" Attributes="0" KeyPath="libgcc_s_dw21.dll"/>
+    <ROW Component="libline1D.dll" ComponentId="{93C5C663-372C-4FF5-B4D1-08EC7B778CCC}" Directory_="masks_Dir" Attributes="0" KeyPath="libline1D.dll"/>
+    <ROW Component="libline1D_SRAF.dll" ComponentId="{EE3BA500-CAED-4555-A26B-480812B712C6}" Directory_="masks_Dir" Attributes="0" KeyPath="libline1D_SRAF.dll"/>
+    <ROW Component="libmack.dll" ComponentId="{BC3E8443-B666-414A-A15F-DC1AD0DC23BF}" Directory_="dev_models_Dir" Attributes="0" KeyPath="libmack.dll"/>
+    <ROW Component="libnotch.dll" ComponentId="{EA3D9E58-1782-4FBC-A0DD-E5F218279587}" Directory_="dev_models_Dir" Attributes="0" KeyPath="libnotch.dll"/>
+    <ROW Component="libnotch_depth.dll" ComponentId="{780DC854-075A-4F92-AC66-943527AAFE60}" Directory_="dev_models_Dir" Attributes="0" KeyPath="libnotch_depth.dll"/>
+    <ROW Component="libspace1D.dll" ComponentId="{E6035E25-2C5C-463E-8718-C25C0096EC1E}" Directory_="masks_Dir" Attributes="0" KeyPath="libspace1D.dll"/>
+    <ROW Component="libstdc6.dll" ComponentId="{9FEDB75B-8A40-4B6E-9A92-3EBCC422FE47}" Directory_="APPDIR" Attributes="0" KeyPath="libstdc6.dll"/>
+    <ROW Component="libwinpthread1.dll" ComponentId="{B42A0D6F-0561-40FB-A96E-139504DC6AFA}" Directory_="APPDIR" Attributes="0" KeyPath="libwinpthread1.dll"/>
+    <ROW Component="lineprops.glade" ComponentId="{A5D60681-98AB-467F-8622-FA35CA003E5C}" Directory_="mpldata_Dir" Attributes="0" KeyPath="lineprops.glade" Type="0"/>
+    <ROW Component="magic" ComponentId="{A420B4EA-DD1E-4757-9CC2-15B956B54269}" Directory_="misc_Dir" Attributes="0" KeyPath="magic" Type="0"/>
+    <ROW Component="magic.dll" ComponentId="{FC7C2758-6F8D-4F7E-8D46-6B6D1931FF78}" Directory_="APPDIR" Attributes="0" KeyPath="magic.dll"/>
+    <ROW Component="optolithium.exe" ComponentId="{CFCDE20F-E15C-4A34-BF18-F5C5EA527F42}" Directory_="APPDIR" Attributes="0" KeyPath="optolithium.exe"/>
+    <ROW Component="pysidepython2.7.dll" ComponentId="{CAE1FF8C-7A24-46C8-8E1D-E719FAF67E19}" Directory_="APPDIR" Attributes="0" KeyPath="pysidepython2.7.dll"/>
+    <ROW Component="python27.dll" ComponentId="{A029A295-D083-4B13-BBC1-8C6CA3E750EE}" Directory_="APPDIR" Attributes="0" KeyPath="python27.dll"/>
+    <ROW Component="pywintypes27.dll" ComponentId="{5FB721B0-1EC8-45FF-991B-120C71A86DCC}" Directory_="APPDIR" Attributes="0" KeyPath="pywintypes27.dll"/>
+    <ROW Component="qgif4.dll" ComponentId="{A6051BC0-6F74-4ED9-93A2-FEB950A156FE}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qgif4.dll"/>
+    <ROW Component="qgifd4.dll" ComponentId="{2A47E4E6-F3B1-4F22-B07E-B19C3FECAF23}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qgifd4.dll"/>
+    <ROW Component="qico4.dll" ComponentId="{7AAB0F12-6FF4-4192-A065-EC4A96857102}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qico4.dll"/>
+    <ROW Component="qicod4.dll" ComponentId="{1053F7FA-E726-4D0D-9F55-46741A996A24}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qicod4.dll"/>
+    <ROW Component="qjpeg4.dll" ComponentId="{22AAC5D4-A8DC-4AB2-8A52-C7738B88B932}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qjpeg4.dll"/>
+    <ROW Component="qjpegd4.dll" ComponentId="{0962A1C5-841F-4807-8363-DF32ACB61D1C}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qjpegd4.dll"/>
+    <ROW Component="qmng4.dll" ComponentId="{C54F2AAB-BB7F-4AAC-9686-36CC4647364D}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qmng4.dll"/>
+    <ROW Component="qmngd4.dll" ComponentId="{B4177CE4-6CE4-4628-B4FE-C7A9A5E75ED0}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qmngd4.dll"/>
+    <ROW Component="qsvg4.dll" ComponentId="{A0355FEA-7E8D-4B7F-BFA8-392E482563BF}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qsvg4.dll"/>
+    <ROW Component="qsvgd4.dll" ComponentId="{445F2392-975A-472C-BA28-1B4479FD85B2}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qsvgd4.dll"/>
+    <ROW Component="qtga4.dll" ComponentId="{7B1F080A-3260-4EA5-9096-8D24CCB93E2F}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qtga4.dll"/>
+    <ROW Component="qtgad4.dll" ComponentId="{16A50DD7-BF90-4AE1-A736-F22723DDB4A1}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qtgad4.dll"/>
+    <ROW Component="qtiff4.dll" ComponentId="{DC54DFA8-25FD-4EC7-856F-471920668A11}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qtiff4.dll"/>
+    <ROW Component="qtiffd4.dll" ComponentId="{3767D0B1-AD70-499A-9D81-FA7651D354CD}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qtiffd4.dll"/>
+    <ROW Component="regex2.dll" ComponentId="{DEDD0EB2-7ED0-4F9F-8027-709710D73B89}" Directory_="APPDIR" Attributes="0" KeyPath="regex2.dll"/>
+    <ROW Component="report.xhtml" ComponentId="{938CC6D2-6A04-4761-AB6A-27254A265EFA}" Directory_="xhtml_Dir" Attributes="0" KeyPath="report.xhtml" Type="0"/>
+    <ROW Component="shibokenpython2.7.dll" ComponentId="{EC9EB59A-1B68-411A-A040-FD137FB2E022}" Directory_="APPDIR" Attributes="0" KeyPath="shibokenpython2.7.dll"/>
+    <ROW Component="sqlite3.dll" ComponentId="{A4EA11D6-6905-42D4-B109-4B0F034366F0}" Directory_="APPDIR" Attributes="0" KeyPath="sqlite3.dll"/>
+    <ROW Component="zlib1.dll" ComponentId="{A5432476-E481-47A3-AED5-16FACD29C6EE}" Directory_="APPDIR" Attributes="0" KeyPath="zlib1.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="About.png CourierBold.afm Optolithium ProductInformation QtCore4.dll QtGui4.dll QtNetwork4.dll QtWebKit4.dll SHORTCUTDIR _clipper.pyd aPolysilicon.MAT aapl.csv back.png bivariate_normal.npy cmb10.ttf cmex10.afm libannular.dll libcentral_obscuration.dll libcoherent.dll libconvenient.dll libenhanced.dll libenhanced_notch.dll libfftw33.dll libfiveBarLine.dll libgcc_s_dw21.dll libline1D.dll libline1D_SRAF.dll libmack.dll libnotch.dll libnotch_depth.dll libspace1D.dll libstdc6.dll libwinpthread1.dll lineprops.glade magic magic.dll optolithium.exe pysidepython2.7.dll python27.dll pywintypes27.dll qgif4.dll qgifd4.dll qico4.dll qicod4.dll qjpeg4.dll qjpegd4.dll qmng4.dll qmngd4.dll qsvg4.dll qsvgd4.dll qtga4.dll qtgad4.dll qtiff4.dll qtiffd4.dll regex2.dll report.xhtml shibokenpython2.7.dll sqlite3.dll zlib1.dll"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AAPL.dat.gz" Component_="aapl.csv" FileName="AAPLDA~1.GZ|AAPL.dat.gz" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\AAPL.dat.gz" SelfReg="false" NextFile="aapl.npy.gz"/>
+    <ROW File="About.png" Component_="About.png" FileName="About.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\About.png" SelfReg="false" NextFile="AerialImage.png"/>
+    <ROW File="AerialImage.png" Component_="About.png" FileName="AERIAL~1.PNG|AerialImage.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\AerialImage.png" SelfReg="false" NextFile="ArrowDown.png"/>
+    <ROW File="AirVacuum.MAT" Component_="aPolysilicon.MAT" FileName="AIR-VA~1.MAT|Air-Vacuum.MAT" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\data\Air-Vacuum.MAT" SelfReg="false" NextFile="fivebar.MSK"/>
+    <ROW File="ArrowDown.png" Component_="About.png" FileName="ARROWD~1.PNG|ArrowDown.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\ArrowDown.png" SelfReg="false" NextFile="ArrowUp.png"/>
+    <ROW File="ArrowUp.png" Component_="About.png" FileName="ArrowUp.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\ArrowUp.png" SelfReg="false" NextFile="Banner.png"/>
+    <ROW File="Banner.png" Component_="About.png" FileName="Banner.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Banner.png" SelfReg="false" NextFile="Database.png"/>
+    <ROW File="COPYRIGHT.TXT" Component_="cmb10.ttf" FileName="COPYRI~1.TXT|COPYRIGHT.TXT" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\COPYRIGHT.TXT" SelfReg="false" NextFile="LICENSE_STIX"/>
+    <ROW File="Courier.afm" Component_="CourierBold.afm" FileName="Courier.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Courier.afm" SelfReg="false" NextFile="HelveticaBold.afm"/>
+    <ROW File="CourierBold.afm" Component_="CourierBold.afm" FileName="COURIE~1.AFM|Courier-Bold.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Courier-Bold.afm" SelfReg="false" NextFile="CourierBoldOblique.afm"/>
+    <ROW File="CourierBoldOblique.afm" Component_="CourierBold.afm" FileName="COURIE~2.AFM|Courier-BoldOblique.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Courier-BoldOblique.afm" SelfReg="false" NextFile="CourierOblique.afm"/>
+    <ROW File="CourierOblique.afm" Component_="CourierBold.afm" FileName="COURIE~3.AFM|Courier-Oblique.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Courier-Oblique.afm" SelfReg="false" NextFile="Courier.afm"/>
+    <ROW File="Database.png" Component_="About.png" FileName="Database.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Database.png" SelfReg="false" NextFile="Database_v2.png"/>
+    <ROW File="Database_v2.png" Component_="About.png" FileName="DATABA~1.PNG|Database_v2.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Database_v2.png" SelfReg="false" NextFile="Development.png"/>
+    <ROW File="DevelopTimeContours.png" Component_="About.png" FileName="DEVELO~2.PNG|DevelopTimeContours.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\DevelopTimeContours.png" SelfReg="false" NextFile="DiffractionPattern.png"/>
+    <ROW File="Development.png" Component_="About.png" FileName="DEVELO~1.PNG|Development.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Development.png" SelfReg="false" NextFile="DevelopTimeContours.png"/>
+    <ROW File="DiffractionPattern.png" Component_="About.png" FileName="DIFFRA~1.PNG|DiffractionPattern.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\DiffractionPattern.png" SelfReg="false" NextFile="Exit.png"/>
+    <ROW File="Exit.png" Component_="About.png" FileName="Exit.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Exit.png" SelfReg="false" NextFile="ExposureAndFocus.png"/>
+    <ROW File="ExposureAndFocus.png" Component_="About.png" FileName="EXPOSU~1.PNG|ExposureAndFocus.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\ExposureAndFocus.png" SelfReg="false" NextFile="Folder.png"/>
+    <ROW File="Folder.png" Component_="About.png" FileName="Folder.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Folder.png" SelfReg="false" NextFile="Form.png"/>
+    <ROW File="Form.png" Component_="About.png" FileName="Form.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Form.png" SelfReg="false" NextFile="Help.png"/>
+    <ROW File="Help.png" Component_="About.png" FileName="Help.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Help.png" SelfReg="false" NextFile="ImageInResist.png"/>
+    <ROW File="Helvetica.afm" Component_="CourierBold.afm" FileName="HELVET~4.AFM|Helvetica.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Helvetica.afm" SelfReg="false" NextFile="readme.txt"/>
+    <ROW File="HelveticaBold.afm" Component_="CourierBold.afm" FileName="HELVET~1.AFM|Helvetica-Bold.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Helvetica-Bold.afm" SelfReg="false" NextFile="HelveticaBoldOblique.afm"/>
+    <ROW File="HelveticaBoldOblique.afm" Component_="CourierBold.afm" FileName="HELVET~2.AFM|Helvetica-BoldOblique.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Helvetica-BoldOblique.afm" SelfReg="false" NextFile="HelveticaOblique.afm"/>
+    <ROW File="HelveticaOblique.afm" Component_="CourierBold.afm" FileName="HELVET~3.AFM|Helvetica-Oblique.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Helvetica-Oblique.afm" SelfReg="false" NextFile="Helvetica.afm"/>
+    <ROW File="INTC.dat.gz" Component_="aapl.csv" FileName="INTCDA~1.GZ|INTC.dat.gz" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\INTC.dat.gz" SelfReg="false" NextFile="lena.jpg"/>
+    <ROW File="ImageInResist.png" Component_="About.png" FileName="IMAGEI~1.PNG|ImageInResist.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\ImageInResist.png" SelfReg="false" NextFile="ImagingTool.png"/>
+    <ROW File="ImagingTool.png" Component_="About.png" FileName="IMAGIN~1.PNG|ImagingTool.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\ImagingTool.png" SelfReg="false" NextFile="LatentImage.png"/>
+    <ROW File="LICENSE_STIX" Component_="cmb10.ttf" FileName="LICENS~1|LICENSE_STIX" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\LICENSE_STIX" SelfReg="false" NextFile="README.TXT_3"/>
+    <ROW File="LatentImage.png" Component_="About.png" FileName="LATENT~1.PNG|LatentImage.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\LatentImage.png" SelfReg="false" NextFile="Logo.png"/>
+    <ROW File="Logo.png" Component_="About.png" FileName="Logo.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Logo.png" SelfReg="false" NextFile="Mask.png"/>
+    <ROW File="Mask.png" Component_="About.png" FileName="Mask.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Mask.png" SelfReg="false" NextFile="Material.png"/>
+    <ROW File="Material.png" Component_="About.png" FileName="Material.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Material.png" SelfReg="false" NextFile="Metrology.png"/>
+    <ROW File="Metrology.png" Component_="About.png" FileName="METROL~1.PNG|Metrology.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Metrology.png" SelfReg="false" NextFile="Minus.png"/>
+    <ROW File="Minduka_Present_Blue_Pack.png" Component_="aapl.csv" FileName="MINDUK~1.PNG|Minduka_Present_Blue_Pack.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\Minduka_Present_Blue_Pack.png" SelfReg="false" NextFile="msft.csv"/>
+    <ROW File="Minus.png" Component_="About.png" FileName="Minus.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Minus.png" SelfReg="false" NextFile="NewFile.png"/>
+    <ROW File="NewFile.png" Component_="About.png" FileName="NewFile.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\NewFile.png" SelfReg="false" NextFile="No.png"/>
+    <ROW File="No.png" Component_="About.png" FileName="No.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\No.png" SelfReg="false" NextFile="Numerics.png"/>
+    <ROW File="Numerics.png" Component_="About.png" FileName="Numerics.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Numerics.png" SelfReg="false" NextFile="Ok.png"/>
+    <ROW File="Ok.png" Component_="About.png" FileName="Ok.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Ok.png" SelfReg="false" NextFile="Open.png"/>
+    <ROW File="Open.png" Component_="About.png" FileName="Open.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Open.png" SelfReg="false" NextFile="PEB.png"/>
+    <ROW File="PEB.png" Component_="About.png" FileName="PEB.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\PEB.png" SelfReg="false" NextFile="Plus.png"/>
+    <ROW File="Plus.png" Component_="About.png" FileName="Plus.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Plus.png" SelfReg="false" NextFile="PostBakeImage.png"/>
+    <ROW File="PostBakeImage.png" Component_="About.png" FileName="POSTBA~1.PNG|PostBakeImage.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\PostBakeImage.png" SelfReg="false" NextFile="Preferences.png"/>
+    <ROW File="Preferences.png" Component_="About.png" FileName="PREFER~1.PNG|Preferences.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Preferences.png" SelfReg="false" NextFile="PupilFilter.png"/>
+    <ROW File="PupilFilter.png" Component_="About.png" FileName="PUPILF~1.PNG|PupilFilter.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\PupilFilter.png" SelfReg="false" NextFile="Queue.png"/>
+    <ROW File="PySide.QtCore.pyd" Component_="_clipper.pyd" FileName="PYSIDE~1.PYD|PySide.QtCore.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\PySide.QtCore.pyd" SelfReg="false" NextFile="PySide.QtGui.pyd"/>
+    <ROW File="PySide.QtGui.pyd" Component_="_clipper.pyd" FileName="PYSIDE~2.PYD|PySide.QtGui.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\PySide.QtGui.pyd" SelfReg="false" NextFile="PySide.QtNetwork.pyd"/>
+    <ROW File="PySide.QtNetwork.pyd" Component_="_clipper.pyd" FileName="PYSIDE~3.PYD|PySide.QtNetwork.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\PySide.QtNetwork.pyd" SelfReg="false" NextFile="PySide.QtWebKit.pyd"/>
+    <ROW File="PySide.QtWebKit.pyd" Component_="_clipper.pyd" FileName="PYSIDE~4.PYD|PySide.QtWebKit.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\PySide.QtWebKit.pyd" SelfReg="false" NextFile="pysidepython2.7.dll"/>
+    <ROW File="QtCore4.dll" Component_="QtCore4.dll" FileName="QtCore4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\QtCore4.dll" SelfReg="false" NextFile="QtGui4.dll"/>
+    <ROW File="QtGui4.dll" Component_="QtGui4.dll" FileName="QtGui4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\QtGui4.dll" SelfReg="false" NextFile="QtNetwork4.dll"/>
+    <ROW File="QtNetwork4.dll" Component_="QtNetwork4.dll" FileName="QTNETW~1.DLL|QtNetwork4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\QtNetwork4.dll" SelfReg="false" NextFile="QtWebKit4.dll"/>
+    <ROW File="QtWebKit4.dll" Component_="QtWebKit4.dll" FileName="QTWEBK~1.DLL|QtWebKit4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\QtWebKit4.dll" SelfReg="false" NextFile="regex2.dll"/>
+    <ROW File="Queue.png" Component_="About.png" FileName="Queue.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Queue.png" SelfReg="false" NextFile="Registration.png"/>
+    <ROW File="README.TXT_3" Component_="cmb10.ttf" FileName="README.TXT" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\README.TXT" SelfReg="false" NextFile="RELEASENOTES.TXT"/>
+    <ROW File="README.txt_4" Component_="aapl.csv" FileName="README.txt" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\README.txt" SelfReg="false" NextFile="s1045.ima.gz"/>
+    <ROW File="RELEASENOTES.TXT" Component_="cmb10.ttf" FileName="RELEAS~1.TXT|RELEASENOTES.TXT" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\RELEASENOTES.TXT" SelfReg="false" NextFile="STIXGeneral.ttf"/>
+    <ROW File="Registration.png" Component_="About.png" FileName="REGIST~1.PNG|Registration.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Registration.png" SelfReg="false" NextFile="Resist.png"/>
+    <ROW File="Resist.png" Component_="About.png" FileName="Resist.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Resist.png" SelfReg="false" NextFile="ResistProfile.png"/>
+    <ROW File="ResistProfile.png" Component_="About.png" FileName="RESIST~1.PNG|ResistProfile.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\ResistProfile.png" SelfReg="false" NextFile="Save.png"/>
+    <ROW File="STIXGeneral.ttf" Component_="cmb10.ttf" FileName="STIXGE~1.TTF|STIXGeneral.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXGeneral.ttf" SelfReg="false" NextFile="STIXGeneralBol.ttf"/>
+    <ROW File="STIXGeneralBol.ttf" Component_="cmb10.ttf" FileName="STIXGE~2.TTF|STIXGeneralBol.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXGeneralBol.ttf" SelfReg="false" NextFile="STIXGeneralBolIta.ttf"/>
+    <ROW File="STIXGeneralBolIta.ttf" Component_="cmb10.ttf" FileName="STIXGE~3.TTF|STIXGeneralBolIta.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXGeneralBolIta.ttf" SelfReg="false" NextFile="STIXGeneralItalic.ttf"/>
+    <ROW File="STIXGeneralItalic.ttf" Component_="cmb10.ttf" FileName="STIXGE~4.TTF|STIXGeneralItalic.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXGeneralItalic.ttf" SelfReg="false" NextFile="STIXNonUni.ttf"/>
+    <ROW File="STIXNonUni.ttf" Component_="cmb10.ttf" FileName="STIXNO~1.TTF|STIXNonUni.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXNonUni.ttf" SelfReg="false" NextFile="STIXNonUniBol.ttf"/>
+    <ROW File="STIXNonUniBol.ttf" Component_="cmb10.ttf" FileName="STIXNO~2.TTF|STIXNonUniBol.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXNonUniBol.ttf" SelfReg="false" NextFile="STIXNonUniBolIta.ttf"/>
+    <ROW File="STIXNonUniBolIta.ttf" Component_="cmb10.ttf" FileName="STIXNO~3.TTF|STIXNonUniBolIta.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXNonUniBolIta.ttf" SelfReg="false" NextFile="STIXNonUniIta.ttf"/>
+    <ROW File="STIXNonUniIta.ttf" Component_="cmb10.ttf" FileName="STIXNO~4.TTF|STIXNonUniIta.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXNonUniIta.ttf" SelfReg="false" NextFile="STIXSizFiveSymReg.ttf"/>
+    <ROW File="STIXSizFiveSymReg.ttf" Component_="cmb10.ttf" FileName="STIXSI~1.TTF|STIXSizFiveSymReg.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizFiveSymReg.ttf" SelfReg="false" NextFile="STIXSizFourSymBol.ttf"/>
+    <ROW File="STIXSizFourSymBol.ttf" Component_="cmb10.ttf" FileName="STIXSI~2.TTF|STIXSizFourSymBol.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizFourSymBol.ttf" SelfReg="false" NextFile="STIXSizFourSymReg.ttf"/>
+    <ROW File="STIXSizFourSymReg.ttf" Component_="cmb10.ttf" FileName="STIXSI~3.TTF|STIXSizFourSymReg.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizFourSymReg.ttf" SelfReg="false" NextFile="STIXSizOneSymBol.ttf"/>
+    <ROW File="STIXSizOneSymBol.ttf" Component_="cmb10.ttf" FileName="STIXSI~4.TTF|STIXSizOneSymBol.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizOneSymBol.ttf" SelfReg="false" NextFile="STIXSizOneSymReg.ttf"/>
+    <ROW File="STIXSizOneSymReg.ttf" Component_="cmb10.ttf" FileName="STIXSI~5.TTF|STIXSizOneSymReg.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizOneSymReg.ttf" SelfReg="false" NextFile="STIXSizThreeSymBol.ttf"/>
+    <ROW File="STIXSizThreeSymBol.ttf" Component_="cmb10.ttf" FileName="STIXSI~6.TTF|STIXSizThreeSymBol.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizThreeSymBol.ttf" SelfReg="false" NextFile="STIXSizThreeSymReg.ttf"/>
+    <ROW File="STIXSizThreeSymReg.ttf" Component_="cmb10.ttf" FileName="STIXSI~7.TTF|STIXSizThreeSymReg.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizThreeSymReg.ttf" SelfReg="false" NextFile="STIXSizTwoSymBol.ttf"/>
+    <ROW File="STIXSizTwoSymBol.ttf" Component_="cmb10.ttf" FileName="STIXSI~8.TTF|STIXSizTwoSymBol.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizTwoSymBol.ttf" SelfReg="false" NextFile="STIXSizTwoSymReg.ttf"/>
+    <ROW File="STIXSizTwoSymReg.ttf" Component_="cmb10.ttf" FileName="STIXSI~9.TTF|STIXSizTwoSymReg.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\STIXSizTwoSymReg.ttf" SelfReg="false" NextFile="Vera.ttf"/>
+    <ROW File="Save.png" Component_="About.png" FileName="Save.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Save.png" SelfReg="false" NextFile="SimulationSets.png"/>
+    <ROW File="SiDioxide.MAT" Component_="aPolysilicon.MAT" FileName="SIDIOX~1.MAT|Si Dioxide.MAT" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\data\Si Dioxide.MAT" SelfReg="false" NextFile="SiNitride.MAT"/>
+    <ROW File="SiNitride.MAT" Component_="aPolysilicon.MAT" FileName="SINITR~1.MAT|Si Nitride.MAT" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\data\Si Nitride.MAT" SelfReg="false" NextFile="Silicon.MAT"/>
+    <ROW File="Silicon.MAT" Component_="aPolysilicon.MAT" FileName="Silicon.MAT" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\data\Silicon.MAT" SelfReg="false" NextFile="magic"/>
+    <ROW File="SimulationSets.png" Component_="About.png" FileName="SIMULA~1.PNG|SimulationSets.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\SimulationSets.png" SelfReg="false" NextFile="SourceShape.png"/>
+    <ROW File="SourceShape.png" Component_="About.png" FileName="SOURCE~1.PNG|SourceShape.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\SourceShape.png" SelfReg="false" NextFile="Summary.png"/>
+    <ROW File="Summary.png" Component_="About.png" FileName="Summary.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Summary.png" SelfReg="false" NextFile="Tools.png"/>
+    <ROW File="Symbol.afm" Component_="CourierBold.afm" FileName="Symbol.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Symbol.afm" SelfReg="false" NextFile="TimesBold.afm"/>
+    <ROW File="TimesBold.afm" Component_="CourierBold.afm" FileName="TIMES-~1.AFM|Times-Bold.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Times-Bold.afm" SelfReg="false" NextFile="TimesBoldItalic.afm"/>
+    <ROW File="TimesBoldItalic.afm" Component_="CourierBold.afm" FileName="TIMES-~2.AFM|Times-BoldItalic.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Times-BoldItalic.afm" SelfReg="false" NextFile="TimesItalic.afm"/>
+    <ROW File="TimesItalic.afm" Component_="CourierBold.afm" FileName="TIMES-~3.AFM|Times-Italic.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Times-Italic.afm" SelfReg="false" NextFile="TimesRoman.afm"/>
+    <ROW File="TimesRoman.afm" Component_="CourierBold.afm" FileName="TIMES-~4.AFM|Times-Roman.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\Times-Roman.afm" SelfReg="false" NextFile="ZapfDingbats.afm"/>
+    <ROW File="Tools.png" Component_="About.png" FileName="Tools.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Tools.png" SelfReg="false" NextFile="WaferStack.png"/>
+    <ROW File="Vera.ttf" Component_="cmb10.ttf" FileName="Vera.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\Vera.ttf" SelfReg="false" NextFile="VeraBd.ttf"/>
+    <ROW File="VeraBI.ttf" Component_="cmb10.ttf" FileName="VeraBI.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraBI.ttf" SelfReg="false" NextFile="VeraIt.ttf"/>
+    <ROW File="VeraBd.ttf" Component_="cmb10.ttf" FileName="VeraBd.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraBd.ttf" SelfReg="false" NextFile="VeraBI.ttf"/>
+    <ROW File="VeraIt.ttf" Component_="cmb10.ttf" FileName="VeraIt.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraIt.ttf" SelfReg="false" NextFile="VeraMoBd.ttf"/>
+    <ROW File="VeraMoBI.ttf" Component_="cmb10.ttf" FileName="VeraMoBI.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraMoBI.ttf" SelfReg="false" NextFile="VeraMoIt.ttf"/>
+    <ROW File="VeraMoBd.ttf" Component_="cmb10.ttf" FileName="VeraMoBd.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraMoBd.ttf" SelfReg="false" NextFile="VeraMoBI.ttf"/>
+    <ROW File="VeraMoIt.ttf" Component_="cmb10.ttf" FileName="VeraMoIt.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraMoIt.ttf" SelfReg="false" NextFile="VeraMono.ttf"/>
+    <ROW File="VeraMono.ttf" Component_="cmb10.ttf" FileName="VeraMono.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraMono.ttf" SelfReg="false" NextFile="VeraSe.ttf"/>
+    <ROW File="VeraSe.ttf" Component_="cmb10.ttf" FileName="VeraSe.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraSe.ttf" SelfReg="false" NextFile="VeraSeBd.ttf"/>
+    <ROW File="VeraSeBd.ttf" Component_="cmb10.ttf" FileName="VeraSeBd.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\VeraSeBd.ttf" SelfReg="false" NextFile="back.png"/>
+    <ROW File="WaferStack.png" Component_="About.png" FileName="WAFERS~1.PNG|WaferStack.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\WaferStack.png" SelfReg="false" NextFile="Wait.png"/>
+    <ROW File="Wait.png" Component_="About.png" FileName="Wait.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Wait.png" SelfReg="false" NextFile="Website.png"/>
+    <ROW File="Website.png" Component_="About.png" FileName="Website.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\icons\Website.png" SelfReg="false" NextFile="qgif4.dll"/>
+    <ROW File="ZapfDingbats.afm" Component_="CourierBold.afm" FileName="ZAPFDI~1.AFM|ZapfDingbats.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\ZapfDingbats.afm" SelfReg="false" NextFile="cmb10.ttf"/>
+    <ROW File="_clipper.pyd" Component_="_clipper.pyd" FileName="_clipper.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\_clipper.pyd" SelfReg="false" NextFile="_ctypes.pyd"/>
+    <ROW File="_ctypes.pyd" Component_="_clipper.pyd" FileName="_ctypes.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\_ctypes.pyd" SelfReg="false" NextFile="_hashlib.pyd"/>
+    <ROW File="_hashlib.pyd" Component_="_clipper.pyd" FileName="_hashlib.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\_hashlib.pyd" SelfReg="false" NextFile="_optolithiumc.pyd"/>
+    <ROW File="_optolithiumc.pyd" Component_="_clipper.pyd" FileName="_OPTOL~1.PYD|_optolithiumc.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\_optolithiumc.pyd" SelfReg="false" NextFile="_psutil_windows.pyd"/>
+    <ROW File="_psutil_windows.pyd" Component_="_clipper.pyd" FileName="_PSUTI~1.PYD|_psutil_windows.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\_psutil_windows.pyd" SelfReg="false" NextFile="_socket.pyd"/>
+    <ROW File="_socket.pyd" Component_="_clipper.pyd" FileName="_socket.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\_socket.pyd" SelfReg="false" NextFile="_sqlite3.pyd"/>
+    <ROW File="_sqlite3.pyd" Component_="_clipper.pyd" FileName="_sqlite3.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\_sqlite3.pyd" SelfReg="false" NextFile="_ssl.pyd"/>
+    <ROW File="_ssl.pyd" Component_="_clipper.pyd" FileName="_ssl.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\_ssl.pyd" SelfReg="false" NextFile="bz2.pyd"/>
+    <ROW File="aPolysilicon.MAT" Component_="aPolysilicon.MAT" FileName="A-POLY~1.MAT|a-Polysilicon.MAT" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\data\a-Polysilicon.MAT" SelfReg="false" NextFile="AirVacuum.MAT"/>
+    <ROW File="aapl.csv" Component_="aapl.csv" FileName="aapl.csv" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\aapl.csv" SelfReg="false" NextFile="AAPL.dat.gz"/>
+    <ROW File="aapl.npy.gz" Component_="aapl.csv" FileName="AAPLNP~1.GZ|aapl.npy.gz" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\aapl.npy.gz" SelfReg="false" NextFile="ada.png"/>
+    <ROW File="ada.png" Component_="aapl.csv" FileName="ada.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\ada.png" SelfReg="false" NextFile="bivariate_normal.npy"/>
+    <ROW File="back.png" Component_="back.png" FileName="back.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\back.png" SelfReg="false" NextFile="back.ppm"/>
+    <ROW File="back.ppm" Component_="back.png" FileName="back.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\back.ppm" SelfReg="false" NextFile="back.svg"/>
+    <ROW File="back.svg" Component_="back.png" FileName="back.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\back.svg" SelfReg="false" NextFile="back.xpm"/>
+    <ROW File="back.xpm" Component_="back.png" FileName="back.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\back.xpm" SelfReg="false" NextFile="filesave.png"/>
+    <ROW File="bivariate_normal.npy" Component_="bivariate_normal.npy" FileName="BIVARI~1.NPY|bivariate_normal.npy" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\axes_grid\bivariate_normal.npy" SelfReg="false" NextFile="ct.raw.gz"/>
+    <ROW File="bz2.pyd" Component_="_clipper.pyd" FileName="bz2.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\bz2.pyd" SelfReg="false" NextFile="libfftw33.dll"/>
+    <ROW File="cmb10.ttf" Component_="cmb10.ttf" FileName="cmb10.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\cmb10.ttf" SelfReg="false" NextFile="cmex10.ttf"/>
+    <ROW File="cmex10.afm" Component_="cmex10.afm" FileName="cmex10.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\cmex10.afm" SelfReg="false" NextFile="cmmi10.afm"/>
+    <ROW File="cmex10.ttf" Component_="cmb10.ttf" FileName="cmex10.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\cmex10.ttf" SelfReg="false" NextFile="cmmi10.ttf"/>
+    <ROW File="cmmi10.afm" Component_="cmex10.afm" FileName="cmmi10.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\cmmi10.afm" SelfReg="false" NextFile="cmr10.afm"/>
+    <ROW File="cmmi10.ttf" Component_="cmb10.ttf" FileName="cmmi10.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\cmmi10.ttf" SelfReg="false" NextFile="cmr10.ttf"/>
+    <ROW File="cmr10.afm" Component_="cmex10.afm" FileName="cmr10.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\cmr10.afm" SelfReg="false" NextFile="cmsy10.afm"/>
+    <ROW File="cmr10.ttf" Component_="cmb10.ttf" FileName="cmr10.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\cmr10.ttf" SelfReg="false" NextFile="cmss10.ttf"/>
+    <ROW File="cmss10.ttf" Component_="cmb10.ttf" FileName="cmss10.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\cmss10.ttf" SelfReg="false" NextFile="cmsy10.ttf"/>
+    <ROW File="cmsy10.afm" Component_="cmex10.afm" FileName="cmsy10.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\cmsy10.afm" SelfReg="false" NextFile="cmtt10.afm"/>
+    <ROW File="cmsy10.ttf" Component_="cmb10.ttf" FileName="cmsy10.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\cmsy10.ttf" SelfReg="false" NextFile="cmtt10.ttf"/>
+    <ROW File="cmtt10.afm" Component_="cmex10.afm" FileName="cmtt10.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\cmtt10.afm" SelfReg="false" NextFile="pagd8a.afm"/>
+    <ROW File="cmtt10.ttf" Component_="cmb10.ttf" FileName="cmtt10.ttf" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\ttf\cmtt10.ttf" SelfReg="false" NextFile="COPYRIGHT.TXT"/>
+    <ROW File="ct.raw.gz" Component_="aapl.csv" FileName="CTRAW~1.GZ|ct.raw.gz" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\ct.raw.gz" SelfReg="false" NextFile="data_x_x2_x3.csv"/>
+    <ROW File="data_x_x2_x3.csv" Component_="aapl.csv" FileName="DATA_X~1.CSV|data_x_x2_x3.csv" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\data_x_x2_x3.csv" SelfReg="false" NextFile="demodata.csv"/>
+    <ROW File="demodata.csv" Component_="aapl.csv" FileName="demodata.csv" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\demodata.csv" SelfReg="false" NextFile="eeg.dat"/>
+    <ROW File="eeg.dat" Component_="aapl.csv" FileName="eeg.dat" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\eeg.dat" SelfReg="false" NextFile="embedding_in_wx3.xrc"/>
+    <ROW File="embedding_in_wx3.xrc" Component_="aapl.csv" FileName="EMBEDD~1.XRC|embedding_in_wx3.xrc" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\embedding_in_wx3.xrc" SelfReg="false" NextFile="goog.npy"/>
+    <ROW File="filesave.png" Component_="back.png" FileName="filesave.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\filesave.png" SelfReg="false" NextFile="filesave.ppm"/>
+    <ROW File="filesave.ppm" Component_="back.png" FileName="filesave.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\filesave.ppm" SelfReg="false" NextFile="filesave.svg"/>
+    <ROW File="filesave.svg" Component_="back.png" FileName="filesave.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\filesave.svg" SelfReg="false" NextFile="filesave.xpm"/>
+    <ROW File="filesave.xpm" Component_="back.png" FileName="filesave.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\filesave.xpm" SelfReg="false" NextFile="forward.png"/>
+    <ROW File="fivebar.MSK" Component_="aPolysilicon.MAT" FileName="fivebar.MSK" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\data\fivebar.MSK" SelfReg="false" NextFile="iline.res"/>
+    <ROW File="forward.png" Component_="back.png" FileName="forward.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\forward.png" SelfReg="false" NextFile="forward.ppm"/>
+    <ROW File="forward.ppm" Component_="back.png" FileName="forward.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\forward.ppm" SelfReg="false" NextFile="forward.svg"/>
+    <ROW File="forward.svg" Component_="back.png" FileName="forward.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\forward.svg" SelfReg="false" NextFile="forward.xpm"/>
+    <ROW File="forward.xpm" Component_="back.png" FileName="forward.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\forward.xpm" SelfReg="false" NextFile="hand.png"/>
+    <ROW File="goog.npy" Component_="aapl.csv" FileName="goog.npy" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\goog.npy" SelfReg="false" NextFile="grace_hopper.jpg"/>
+    <ROW File="grace_hopper.jpg" Component_="aapl.csv" FileName="GRACE_~1.JPG|grace_hopper.jpg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\grace_hopper.jpg" SelfReg="false" NextFile="grace_hopper.png"/>
+    <ROW File="grace_hopper.png" Component_="aapl.csv" FileName="GRACE_~1.PNG|grace_hopper.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\grace_hopper.png" SelfReg="false" NextFile="INTC.dat.gz"/>
+    <ROW File="hand.png" Component_="back.png" FileName="hand.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\hand.png" SelfReg="false" NextFile="hand.ppm"/>
+    <ROW File="hand.ppm" Component_="back.png" FileName="hand.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\hand.ppm" SelfReg="false" NextFile="hand.svg"/>
+    <ROW File="hand.svg" Component_="back.png" FileName="hand.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\hand.svg" SelfReg="false" NextFile="hand.xpm"/>
+    <ROW File="hand.xpm" Component_="back.png" FileName="hand.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\hand.xpm" SelfReg="false" NextFile="home.png"/>
+    <ROW File="home.png" Component_="back.png" FileName="home.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\home.png" SelfReg="false" NextFile="home.ppm"/>
+    <ROW File="home.ppm" Component_="back.png" FileName="home.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\home.ppm" SelfReg="false" NextFile="home.svg"/>
+    <ROW File="home.svg" Component_="back.png" FileName="home.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\home.svg" SelfReg="false" NextFile="home.xpm"/>
+    <ROW File="home.xpm" Component_="back.png" FileName="home.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\home.xpm" SelfReg="false" NextFile="matplotlib.gif"/>
+    <ROW File="iline.res" Component_="aPolysilicon.MAT" FileName="i-line.res" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\data\i-line.res" SelfReg="false" NextFile="SiDioxide.MAT"/>
+    <ROW File="lena.jpg" Component_="aapl.csv" FileName="lena.jpg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\lena.jpg" SelfReg="false" NextFile="lena.png"/>
+    <ROW File="lena.png" Component_="aapl.csv" FileName="lena.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\lena.png" SelfReg="false" NextFile="logo2.png"/>
+    <ROW File="libannular.dll" Component_="libannular.dll" FileName="LIBANN~1.DLL|libannular.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\source_shapes\libannular.dll" SelfReg="false" NextFile="libcoherent.dll"/>
+    <ROW File="libcentral_obscuration.dll" Component_="libcentral_obscuration.dll" FileName="LIBCEN~1.DLL|libcentral_obscuration.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\pupil_filters\libcentral_obscuration.dll" SelfReg="false" NextFile="libannular.dll"/>
+    <ROW File="libcoherent.dll" Component_="libcoherent.dll" FileName="LIBCOH~1.DLL|libcoherent.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\source_shapes\libcoherent.dll" SelfReg="false" NextFile="libconvenient.dll"/>
+    <ROW File="libconvenient.dll" Component_="libconvenient.dll" FileName="LIBCON~1.DLL|libconvenient.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\source_shapes\libconvenient.dll" SelfReg="false" NextFile="aPolysilicon.MAT"/>
+    <ROW File="libenhanced.dll" Component_="libenhanced.dll" FileName="LIBENH~1.DLL|libenhanced.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\dev_models\libenhanced.dll" SelfReg="false" NextFile="libenhanced_notch.dll"/>
+    <ROW File="libenhanced_notch.dll" Component_="libenhanced_notch.dll" FileName="LIBENH~2.DLL|libenhanced_notch.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\dev_models\libenhanced_notch.dll" SelfReg="false" NextFile="libmack.dll"/>
+    <ROW File="libfftw33.dll" Component_="libfftw33.dll" FileName="LIBFFT~1.DLL|libfftw3-3.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\libfftw3-3.dll" SelfReg="false" NextFile="libgcc_s_dw21.dll"/>
+    <ROW File="libfiveBarLine.dll" Component_="libfiveBarLine.dll" FileName="LIBFIV~1.DLL|libfiveBarLine.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\masks\libfiveBarLine.dll" SelfReg="false" NextFile="libline1D.dll"/>
+    <ROW File="libgcc_s_dw21.dll" Component_="libgcc_s_dw21.dll" FileName="LIBGCC~1.DLL|libgcc_s_dw2-1.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\libgcc_s_dw2-1.dll" SelfReg="false" NextFile="library.zip"/>
+    <ROW File="libline1D.dll" Component_="libline1D.dll" FileName="LIBLIN~1.DLL|libline1D.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\masks\libline1D.dll" SelfReg="false" NextFile="libline1D_SRAF.dll"/>
+    <ROW File="libline1D_SRAF.dll" Component_="libline1D_SRAF.dll" FileName="LIBLIN~2.DLL|libline1D_SRAF.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\masks\libline1D_SRAF.dll" SelfReg="false" NextFile="libspace1D.dll"/>
+    <ROW File="libmack.dll" Component_="libmack.dll" FileName="libmack.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\dev_models\libmack.dll" SelfReg="false" NextFile="libnotch.dll"/>
+    <ROW File="libnotch.dll" Component_="libnotch.dll" FileName="libnotch.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\dev_models\libnotch.dll" SelfReg="false" NextFile="libnotch_depth.dll"/>
+    <ROW File="libnotch_depth.dll" Component_="libnotch_depth.dll" FileName="LIBNOT~1.DLL|libnotch_depth.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\dev_models\libnotch_depth.dll" SelfReg="false" NextFile="libfiveBarLine.dll"/>
+    <ROW File="library.zip" Component_="_clipper.pyd" FileName="library.zip" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\library.zip" SelfReg="false" NextFile="libstdc6.dll"/>
+    <ROW File="libspace1D.dll" Component_="libspace1D.dll" FileName="LIBSPA~1.DLL|libspace1D.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\plugins\masks\libspace1D.dll" SelfReg="false" NextFile="libcentral_obscuration.dll"/>
+    <ROW File="libstdc6.dll" Component_="libstdc6.dll" FileName="LIBSTD~1.DLL|libstdc++-6.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\libstdc++-6.dll" SelfReg="false" NextFile="libwinpthread1.dll"/>
+    <ROW File="libwinpthread1.dll" Component_="libwinpthread1.dll" FileName="LIBWIN~1.DLL|libwinpthread-1.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\libwinpthread-1.dll" SelfReg="false" NextFile="lxml.etree.pyd"/>
+    <ROW File="lineprops.glade" Component_="lineprops.glade" FileName="LINEPR~1.GLA|lineprops.glade" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\lineprops.glade" SelfReg="false" NextFile="matplotlibrc_2"/>
+    <ROW File="logo2.png" Component_="aapl.csv" FileName="logo2.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\logo2.png" SelfReg="false" NextFile="membrane.dat"/>
+    <ROW File="lxml.etree.pyd" Component_="_clipper.pyd" FileName="LXMLET~1.PYD|lxml.etree.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\lxml.etree.pyd" SelfReg="false" NextFile="magic.dll"/>
+    <ROW File="magic" Component_="magic" FileName="magic" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\misc\magic" SelfReg="false" NextFile="magic.mgc"/>
+    <ROW File="magic.dll" Component_="magic.dll" FileName="magic.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\magic.dll" SelfReg="false" NextFile="matplotlib._cntr.pyd"/>
+    <ROW File="magic.mgc" Component_="magic" FileName="magic.mgc" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\share\misc\magic.mgc" SelfReg="false" NextFile="report.xhtml"/>
+    <ROW File="matplotlib._cntr.pyd" Component_="_clipper.pyd" FileName="MATPLO~1.PYD|matplotlib._cntr.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib._cntr.pyd" SelfReg="false" NextFile="matplotlib._delaunay.pyd"/>
+    <ROW File="matplotlib._delaunay.pyd" Component_="_clipper.pyd" FileName="MATPLO~2.PYD|matplotlib._delaunay.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib._delaunay.pyd" SelfReg="false" NextFile="matplotlib._image.pyd"/>
+    <ROW File="matplotlib._image.pyd" Component_="_clipper.pyd" FileName="MATPLO~3.PYD|matplotlib._image.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib._image.pyd" SelfReg="false" NextFile="matplotlib._path.pyd"/>
+    <ROW File="matplotlib._path.pyd" Component_="_clipper.pyd" FileName="MATPLO~4.PYD|matplotlib._path.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib._path.pyd" SelfReg="false" NextFile="matplotlib._png.pyd"/>
+    <ROW File="matplotlib._png.pyd" Component_="_clipper.pyd" FileName="MATPLO~5.PYD|matplotlib._png.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib._png.pyd" SelfReg="false" NextFile="matplotlib._tri.pyd"/>
+    <ROW File="matplotlib._tri.pyd" Component_="_clipper.pyd" FileName="MATPLO~6.PYD|matplotlib._tri.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib._tri.pyd" SelfReg="false" NextFile="matplotlib.backends._backend_agg.pyd"/>
+    <ROW File="matplotlib.backends._backend_agg.pyd" Component_="_clipper.pyd" FileName="MATPLO~7.PYD|matplotlib.backends._backend_agg.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib.backends._backend_agg.pyd" SelfReg="false" NextFile="matplotlib.ft2font.pyd"/>
+    <ROW File="matplotlib.ft2font.pyd" Component_="_clipper.pyd" FileName="MATPLO~8.PYD|matplotlib.ft2font.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib.ft2font.pyd" SelfReg="false" NextFile="matplotlib.ttconv.pyd"/>
+    <ROW File="matplotlib.gif" Component_="back.png" FileName="MATPLO~1.GIF|matplotlib.gif" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\matplotlib.gif" SelfReg="false" NextFile="matplotlib.png"/>
+    <ROW File="matplotlib.png" Component_="back.png" FileName="MATPLO~1.PNG|matplotlib.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\matplotlib.png" SelfReg="false" NextFile="matplotlib.svg"/>
+    <ROW File="matplotlib.svg" Component_="back.png" FileName="MATPLO~1.SVG|matplotlib.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\matplotlib.svg" SelfReg="false" NextFile="move.png"/>
+    <ROW File="matplotlib.ttconv.pyd" Component_="_clipper.pyd" FileName="MATPLO~9.PYD|matplotlib.ttconv.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlib.ttconv.pyd" SelfReg="false" NextFile="matplotlibrc"/>
+    <ROW File="matplotlibrc" Component_="_clipper.pyd" FileName="MATPLO~1|matplotlibrc" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\matplotlibrc" SelfReg="false" NextFile="numpy.core._sort.pyd"/>
+    <ROW File="matplotlibrc_2" Component_="lineprops.glade" FileName="MATPLO~1|matplotlibrc" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\matplotlibrc" SelfReg="false" NextFile="aapl.csv"/>
+    <ROW File="membrane.dat" Component_="aapl.csv" FileName="membrane.dat" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\membrane.dat" SelfReg="false" NextFile="Minduka_Present_Blue_Pack.png"/>
+    <ROW File="move.png" Component_="back.png" FileName="move.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\move.png" SelfReg="false" NextFile="move.ppm"/>
+    <ROW File="move.ppm" Component_="back.png" FileName="move.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\move.ppm" SelfReg="false" NextFile="move.svg"/>
+    <ROW File="move.svg" Component_="back.png" FileName="move.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\move.svg" SelfReg="false" NextFile="move.xpm"/>
+    <ROW File="move.xpm" Component_="back.png" FileName="move.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\move.xpm" SelfReg="false" NextFile="qt4_editor_options.png"/>
+    <ROW File="msft.csv" Component_="aapl.csv" FileName="msft.csv" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\msft.csv" SelfReg="false" NextFile="README.txt_4"/>
+    <ROW File="numpy.core._sort.pyd" Component_="_clipper.pyd" FileName="NUMPYC~1.PYD|numpy.core._sort.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\numpy.core._sort.pyd" SelfReg="false" NextFile="numpy.core.multiarray.pyd"/>
+    <ROW File="numpy.core.multiarray.pyd" Component_="_clipper.pyd" FileName="NUMPYC~2.PYD|numpy.core.multiarray.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\numpy.core.multiarray.pyd" SelfReg="false" NextFile="numpy.core.scalarmath.pyd"/>
+    <ROW File="numpy.core.scalarmath.pyd" Component_="_clipper.pyd" FileName="NUMPYC~3.PYD|numpy.core.scalarmath.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\numpy.core.scalarmath.pyd" SelfReg="false" NextFile="numpy.core.umath.pyd"/>
+    <ROW File="numpy.core.umath.pyd" Component_="_clipper.pyd" FileName="NUMPYC~4.PYD|numpy.core.umath.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\numpy.core.umath.pyd" SelfReg="false" NextFile="numpy.fft.fftpack_lite.pyd"/>
+    <ROW File="numpy.fft.fftpack_lite.pyd" Component_="_clipper.pyd" FileName="NUMPYF~1.PYD|numpy.fft.fftpack_lite.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\numpy.fft.fftpack_lite.pyd" SelfReg="false" NextFile="numpy.lib._compiled_base.pyd"/>
+    <ROW File="numpy.lib._compiled_base.pyd" Component_="_clipper.pyd" FileName="NUMPYL~1.PYD|numpy.lib._compiled_base.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\numpy.lib._compiled_base.pyd" SelfReg="false" NextFile="numpy.linalg.lapack_lite.pyd"/>
+    <ROW File="numpy.linalg.lapack_lite.pyd" Component_="_clipper.pyd" FileName="NUMPYL~2.PYD|numpy.linalg.lapack_lite.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\numpy.linalg.lapack_lite.pyd" SelfReg="false" NextFile="numpy.random.mtrand.pyd"/>
+    <ROW File="numpy.random.mtrand.pyd" Component_="_clipper.pyd" FileName="NUMPYR~1.PYD|numpy.random.mtrand.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\numpy.random.mtrand.pyd" SelfReg="false" NextFile="optolithium.exe"/>
+    <ROW File="optolithium.exe" Component_="optolithium.exe" FileName="OPTOLI~1.EXE|optolithium.exe" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\optolithium.exe" SelfReg="false" NextFile="pyexpat.pyd" DigSign="true"/>
+    <ROW File="pagd8a.afm" Component_="cmex10.afm" FileName="pagd8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pagd8a.afm" SelfReg="false" NextFile="pagdo8a.afm"/>
+    <ROW File="pagdo8a.afm" Component_="cmex10.afm" FileName="pagdo8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pagdo8a.afm" SelfReg="false" NextFile="pagk8a.afm"/>
+    <ROW File="pagk8a.afm" Component_="cmex10.afm" FileName="pagk8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pagk8a.afm" SelfReg="false" NextFile="pagko8a.afm"/>
+    <ROW File="pagko8a.afm" Component_="cmex10.afm" FileName="pagko8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pagko8a.afm" SelfReg="false" NextFile="pbkd8a.afm"/>
+    <ROW File="pbkd8a.afm" Component_="cmex10.afm" FileName="pbkd8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pbkd8a.afm" SelfReg="false" NextFile="pbkdi8a.afm"/>
+    <ROW File="pbkdi8a.afm" Component_="cmex10.afm" FileName="pbkdi8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pbkdi8a.afm" SelfReg="false" NextFile="pbkl8a.afm"/>
+    <ROW File="pbkl8a.afm" Component_="cmex10.afm" FileName="pbkl8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pbkl8a.afm" SelfReg="false" NextFile="pbkli8a.afm"/>
+    <ROW File="pbkli8a.afm" Component_="cmex10.afm" FileName="pbkli8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pbkli8a.afm" SelfReg="false" NextFile="pcrb8a.afm"/>
+    <ROW File="pcrb8a.afm" Component_="cmex10.afm" FileName="pcrb8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pcrb8a.afm" SelfReg="false" NextFile="pcrbo8a.afm"/>
+    <ROW File="pcrbo8a.afm" Component_="cmex10.afm" FileName="pcrbo8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pcrbo8a.afm" SelfReg="false" NextFile="pcrr8a.afm"/>
+    <ROW File="pcrr8a.afm" Component_="cmex10.afm" FileName="pcrr8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pcrr8a.afm" SelfReg="false" NextFile="pcrro8a.afm"/>
+    <ROW File="pcrro8a.afm" Component_="cmex10.afm" FileName="pcrro8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pcrro8a.afm" SelfReg="false" NextFile="phvb8a.afm"/>
+    <ROW File="phvb8a.afm" Component_="cmex10.afm" FileName="phvb8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvb8a.afm" SelfReg="false" NextFile="phvb8an.afm"/>
+    <ROW File="phvb8an.afm" Component_="cmex10.afm" FileName="phvb8an.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvb8an.afm" SelfReg="false" NextFile="phvbo8a.afm"/>
+    <ROW File="phvbo8a.afm" Component_="cmex10.afm" FileName="phvbo8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvbo8a.afm" SelfReg="false" NextFile="phvbo8an.afm"/>
+    <ROW File="phvbo8an.afm" Component_="cmex10.afm" FileName="phvbo8an.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvbo8an.afm" SelfReg="false" NextFile="phvl8a.afm"/>
+    <ROW File="phvl8a.afm" Component_="cmex10.afm" FileName="phvl8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvl8a.afm" SelfReg="false" NextFile="phvlo8a.afm"/>
+    <ROW File="phvlo8a.afm" Component_="cmex10.afm" FileName="phvlo8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvlo8a.afm" SelfReg="false" NextFile="phvr8a.afm"/>
+    <ROW File="phvr8a.afm" Component_="cmex10.afm" FileName="phvr8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvr8a.afm" SelfReg="false" NextFile="phvr8an.afm"/>
+    <ROW File="phvr8an.afm" Component_="cmex10.afm" FileName="phvr8an.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvr8an.afm" SelfReg="false" NextFile="phvro8a.afm"/>
+    <ROW File="phvro8a.afm" Component_="cmex10.afm" FileName="phvro8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvro8a.afm" SelfReg="false" NextFile="phvro8an.afm"/>
+    <ROW File="phvro8an.afm" Component_="cmex10.afm" FileName="phvro8an.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\phvro8an.afm" SelfReg="false" NextFile="pncb8a.afm"/>
+    <ROW File="pncb8a.afm" Component_="cmex10.afm" FileName="pncb8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pncb8a.afm" SelfReg="false" NextFile="pncbi8a.afm"/>
+    <ROW File="pncbi8a.afm" Component_="cmex10.afm" FileName="pncbi8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pncbi8a.afm" SelfReg="false" NextFile="pncr8a.afm"/>
+    <ROW File="pncr8a.afm" Component_="cmex10.afm" FileName="pncr8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pncr8a.afm" SelfReg="false" NextFile="pncri8a.afm"/>
+    <ROW File="pncri8a.afm" Component_="cmex10.afm" FileName="pncri8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pncri8a.afm" SelfReg="false" NextFile="pplb8a.afm"/>
+    <ROW File="pplb8a.afm" Component_="cmex10.afm" FileName="pplb8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pplb8a.afm" SelfReg="false" NextFile="pplbi8a.afm"/>
+    <ROW File="pplbi8a.afm" Component_="cmex10.afm" FileName="pplbi8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pplbi8a.afm" SelfReg="false" NextFile="pplr8a.afm"/>
+    <ROW File="pplr8a.afm" Component_="cmex10.afm" FileName="pplr8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pplr8a.afm" SelfReg="false" NextFile="pplri8a.afm"/>
+    <ROW File="pplri8a.afm" Component_="cmex10.afm" FileName="pplri8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pplri8a.afm" SelfReg="false" NextFile="psyr.afm"/>
+    <ROW File="psyr.afm" Component_="cmex10.afm" FileName="psyr.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\psyr.afm" SelfReg="false" NextFile="ptmb8a.afm"/>
+    <ROW File="ptmb8a.afm" Component_="cmex10.afm" FileName="ptmb8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\ptmb8a.afm" SelfReg="false" NextFile="ptmbi8a.afm"/>
+    <ROW File="ptmbi8a.afm" Component_="cmex10.afm" FileName="ptmbi8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\ptmbi8a.afm" SelfReg="false" NextFile="ptmr8a.afm"/>
+    <ROW File="ptmr8a.afm" Component_="cmex10.afm" FileName="ptmr8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\ptmr8a.afm" SelfReg="false" NextFile="ptmri8a.afm"/>
+    <ROW File="ptmri8a.afm" Component_="cmex10.afm" FileName="ptmri8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\ptmri8a.afm" SelfReg="false" NextFile="putb8a.afm"/>
+    <ROW File="putb8a.afm" Component_="cmex10.afm" FileName="putb8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\putb8a.afm" SelfReg="false" NextFile="putbi8a.afm"/>
+    <ROW File="putbi8a.afm" Component_="cmex10.afm" FileName="putbi8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\putbi8a.afm" SelfReg="false" NextFile="putr8a.afm"/>
+    <ROW File="putr8a.afm" Component_="cmex10.afm" FileName="putr8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\putr8a.afm" SelfReg="false" NextFile="putri8a.afm"/>
+    <ROW File="putri8a.afm" Component_="cmex10.afm" FileName="putri8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\putri8a.afm" SelfReg="false" NextFile="pzcmi8a.afm"/>
+    <ROW File="pyexpat.pyd" Component_="_clipper.pyd" FileName="pyexpat.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\pyexpat.pyd" SelfReg="false" NextFile="PySide.QtCore.pyd"/>
+    <ROW File="pysidepython2.7.dll" Component_="pysidepython2.7.dll" FileName="PYSIDE~1.DLL|pyside-python2.7.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\pyside-python2.7.dll" SelfReg="false" NextFile="python27.dll"/>
+    <ROW File="python27.dll" Component_="python27.dll" FileName="python27.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\python27.dll" SelfReg="false" NextFile="pywintypes27.dll"/>
+    <ROW File="pywintypes27.dll" Component_="pywintypes27.dll" FileName="PYWINT~1.DLL|pywintypes27.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\pywintypes27.dll" SelfReg="false" NextFile="QtCore4.dll"/>
+    <ROW File="pzcmi8a.afm" Component_="cmex10.afm" FileName="pzcmi8a.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pzcmi8a.afm" SelfReg="false" NextFile="pzdr.afm"/>
+    <ROW File="pzdr.afm" Component_="cmex10.afm" FileName="pzdr.afm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\afm\pzdr.afm" SelfReg="false" NextFile="CourierBold.afm"/>
+    <ROW File="qgif4.dll" Component_="qgif4.dll" FileName="qgif4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qgif4.dll" SelfReg="false" NextFile="qgifd4.dll"/>
+    <ROW File="qgifd4.dll" Component_="qgifd4.dll" FileName="qgifd4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qgifd4.dll" SelfReg="false" NextFile="qico4.dll"/>
+    <ROW File="qico4.dll" Component_="qico4.dll" FileName="qico4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qico4.dll" SelfReg="false" NextFile="qicod4.dll"/>
+    <ROW File="qicod4.dll" Component_="qicod4.dll" FileName="qicod4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qicod4.dll" SelfReg="false" NextFile="qjpeg4.dll"/>
+    <ROW File="qjpeg4.dll" Component_="qjpeg4.dll" FileName="qjpeg4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qjpeg4.dll" SelfReg="false" NextFile="qjpegd4.dll"/>
+    <ROW File="qjpegd4.dll" Component_="qjpegd4.dll" FileName="qjpegd4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qjpegd4.dll" SelfReg="false" NextFile="qmng4.dll"/>
+    <ROW File="qmng4.dll" Component_="qmng4.dll" FileName="qmng4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qmng4.dll" SelfReg="false" NextFile="qmngd4.dll"/>
+    <ROW File="qmngd4.dll" Component_="qmngd4.dll" FileName="qmngd4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qmngd4.dll" SelfReg="false" NextFile="qsvg4.dll"/>
+    <ROW File="qsvg4.dll" Component_="qsvg4.dll" FileName="qsvg4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qsvg4.dll" SelfReg="false" NextFile="qsvgd4.dll"/>
+    <ROW File="qsvgd4.dll" Component_="qsvgd4.dll" FileName="qsvgd4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qsvgd4.dll" SelfReg="false" NextFile="qtga4.dll"/>
+    <ROW File="qt4_editor_options.png" Component_="back.png" FileName="QT4_ED~1.PNG|qt4_editor_options.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\qt4_editor_options.png" SelfReg="false" NextFile="qt4_editor_options.svg"/>
+    <ROW File="qt4_editor_options.svg" Component_="back.png" FileName="QT4_ED~1.SVG|qt4_editor_options.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\qt4_editor_options.svg" SelfReg="false" NextFile="stock_close.ppm"/>
+    <ROW File="qtga4.dll" Component_="qtga4.dll" FileName="qtga4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qtga4.dll" SelfReg="false" NextFile="qtgad4.dll"/>
+    <ROW File="qtgad4.dll" Component_="qtgad4.dll" FileName="qtgad4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qtgad4.dll" SelfReg="false" NextFile="qtiff4.dll"/>
+    <ROW File="qtiff4.dll" Component_="qtiff4.dll" FileName="qtiff4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qtiff4.dll" SelfReg="false" NextFile="qtiffd4.dll"/>
+    <ROW File="qtiffd4.dll" Component_="qtiffd4.dll" FileName="qtiffd4.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\imageformats\qtiffd4.dll" SelfReg="false" NextFile="cmex10.afm"/>
+    <ROW File="readme.txt" Component_="CourierBold.afm" FileName="readme.txt" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\fonts\pdfcorefonts\readme.txt" SelfReg="false" NextFile="Symbol.afm"/>
+    <ROW File="regex2.dll" Component_="regex2.dll" FileName="regex2.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\regex2.dll" SelfReg="false" NextFile="scipy.interpolate._fitpack.pyd"/>
+    <ROW File="report.xhtml" Component_="report.xhtml" FileName="REPORT~1.XHT|report.xhtml" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\xhtml\report.xhtml" SelfReg="false"/>
+    <ROW File="s1045.ima.gz" Component_="aapl.csv" FileName="S1045I~1.GZ|s1045.ima.gz" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\sample_data\s1045.ima.gz" SelfReg="false" NextFile="libenhanced.dll"/>
+    <ROW File="scipy.interpolate._fitpack.pyd" Component_="_clipper.pyd" FileName="SCIPYI~1.PYD|scipy.interpolate._fitpack.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.interpolate._fitpack.pyd" SelfReg="false" NextFile="scipy.interpolate._interpolate.pyd"/>
+    <ROW File="scipy.interpolate._interpolate.pyd" Component_="_clipper.pyd" FileName="SCIPYI~2.PYD|scipy.interpolate._interpolate.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.interpolate._interpolate.pyd" SelfReg="false" NextFile="scipy.interpolate.dfitpack.pyd"/>
+    <ROW File="scipy.interpolate.dfitpack.pyd" Component_="_clipper.pyd" FileName="SCIPYI~3.PYD|scipy.interpolate.dfitpack.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.interpolate.dfitpack.pyd" SelfReg="false" NextFile="scipy.interpolate.interpnd.pyd"/>
+    <ROW File="scipy.interpolate.interpnd.pyd" Component_="_clipper.pyd" FileName="SCIPYI~4.PYD|scipy.interpolate.interpnd.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.interpolate.interpnd.pyd" SelfReg="false" NextFile="scipy.lib.blas.cblas.pyd"/>
+    <ROW File="scipy.lib.blas.cblas.pyd" Component_="_clipper.pyd" FileName="SCIPYL~1.PYD|scipy.lib.blas.cblas.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.lib.blas.cblas.pyd" SelfReg="false" NextFile="scipy.lib.blas.fblas.pyd"/>
+    <ROW File="scipy.lib.blas.fblas.pyd" Component_="_clipper.pyd" FileName="SCIPYL~2.PYD|scipy.lib.blas.fblas.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.lib.blas.fblas.pyd" SelfReg="false" NextFile="scipy.lib.lapack.calc_lwork.pyd"/>
+    <ROW File="scipy.lib.lapack.calc_lwork.pyd" Component_="_clipper.pyd" FileName="SCIPYL~3.PYD|scipy.lib.lapack.calc_lwork.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.lib.lapack.calc_lwork.pyd" SelfReg="false" NextFile="scipy.lib.lapack.clapack.pyd"/>
+    <ROW File="scipy.lib.lapack.clapack.pyd" Component_="_clipper.pyd" FileName="SCIPYL~4.PYD|scipy.lib.lapack.clapack.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.lib.lapack.clapack.pyd" SelfReg="false" NextFile="scipy.lib.lapack.flapack.pyd"/>
+    <ROW File="scipy.lib.lapack.flapack.pyd" Component_="_clipper.pyd" FileName="SCIPYL~5.PYD|scipy.lib.lapack.flapack.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.lib.lapack.flapack.pyd" SelfReg="false" NextFile="scipy.linalg._cblas.pyd"/>
+    <ROW File="scipy.linalg._cblas.pyd" Component_="_clipper.pyd" FileName="SCIPYL~6.PYD|scipy.linalg._cblas.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.linalg._cblas.pyd" SelfReg="false" NextFile="scipy.linalg._clapack.pyd"/>
+    <ROW File="scipy.linalg._clapack.pyd" Component_="_clipper.pyd" FileName="SCIPYL~7.PYD|scipy.linalg._clapack.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.linalg._clapack.pyd" SelfReg="false" NextFile="scipy.linalg._fblas.pyd"/>
+    <ROW File="scipy.linalg._fblas.pyd" Component_="_clipper.pyd" FileName="SCIPYL~8.PYD|scipy.linalg._fblas.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.linalg._fblas.pyd" SelfReg="false" NextFile="scipy.linalg._flapack.pyd"/>
+    <ROW File="scipy.linalg._flapack.pyd" Component_="_clipper.pyd" FileName="SCIPYL~9.PYD|scipy.linalg._flapack.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.linalg._flapack.pyd" SelfReg="false" NextFile="scipy.linalg._flinalg.pyd"/>
+    <ROW File="scipy.linalg._flinalg.pyd" Component_="_clipper.pyd" FileName="SCIPY~10.PYD|scipy.linalg._flinalg.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.linalg._flinalg.pyd" SelfReg="false" NextFile="scipy.linalg._interpolative.pyd"/>
+    <ROW File="scipy.linalg._interpolative.pyd" Component_="_clipper.pyd" FileName="SCIPY~11.PYD|scipy.linalg._interpolative.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.linalg._interpolative.pyd" SelfReg="false" NextFile="scipy.linalg.calc_lwork.pyd"/>
+    <ROW File="scipy.linalg.calc_lwork.pyd" Component_="_clipper.pyd" FileName="SCIPY~12.PYD|scipy.linalg.calc_lwork.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.linalg.calc_lwork.pyd" SelfReg="false" NextFile="scipy.ndimage._nd_image.pyd"/>
+    <ROW File="scipy.ndimage._nd_image.pyd" Component_="_clipper.pyd" FileName="SCIPYN~1.PYD|scipy.ndimage._nd_image.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.ndimage._nd_image.pyd" SelfReg="false" NextFile="scipy.ndimage._ni_label.pyd"/>
+    <ROW File="scipy.ndimage._ni_label.pyd" Component_="_clipper.pyd" FileName="SCIPYN~2.PYD|scipy.ndimage._ni_label.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.ndimage._ni_label.pyd" SelfReg="false" NextFile="scipy.optimize._cobyla.pyd"/>
+    <ROW File="scipy.optimize._cobyla.pyd" Component_="_clipper.pyd" FileName="SCIPYO~1.PYD|scipy.optimize._cobyla.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.optimize._cobyla.pyd" SelfReg="false" NextFile="scipy.optimize._lbfgsb.pyd"/>
+    <ROW File="scipy.optimize._lbfgsb.pyd" Component_="_clipper.pyd" FileName="SCIPYO~2.PYD|scipy.optimize._lbfgsb.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.optimize._lbfgsb.pyd" SelfReg="false" NextFile="scipy.optimize._minpack.pyd"/>
+    <ROW File="scipy.optimize._minpack.pyd" Component_="_clipper.pyd" FileName="SCIPYO~3.PYD|scipy.optimize._minpack.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.optimize._minpack.pyd" SelfReg="false" NextFile="scipy.optimize._nnls.pyd"/>
+    <ROW File="scipy.optimize._nnls.pyd" Component_="_clipper.pyd" FileName="SCIPYO~4.PYD|scipy.optimize._nnls.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.optimize._nnls.pyd" SelfReg="false" NextFile="scipy.optimize._slsqp.pyd"/>
+    <ROW File="scipy.optimize._slsqp.pyd" Component_="_clipper.pyd" FileName="SCIPYO~5.PYD|scipy.optimize._slsqp.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.optimize._slsqp.pyd" SelfReg="false" NextFile="scipy.optimize._zeros.pyd"/>
+    <ROW File="scipy.optimize._zeros.pyd" Component_="_clipper.pyd" FileName="SCIPYO~6.PYD|scipy.optimize._zeros.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.optimize._zeros.pyd" SelfReg="false" NextFile="scipy.optimize.minpack2.pyd"/>
+    <ROW File="scipy.optimize.minpack2.pyd" Component_="_clipper.pyd" FileName="SCIPYO~7.PYD|scipy.optimize.minpack2.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.optimize.minpack2.pyd" SelfReg="false" NextFile="scipy.optimize.moduleTNC.pyd"/>
+    <ROW File="scipy.optimize.moduleTNC.pyd" Component_="_clipper.pyd" FileName="SCIPYO~8.PYD|scipy.optimize.moduleTNC.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.optimize.moduleTNC.pyd" SelfReg="false" NextFile="scipy.sparse.csgraph._min_spanning_tree.pyd"/>
+    <ROW File="scipy.sparse.csgraph._min_spanning_tree.pyd" Component_="_clipper.pyd" FileName="SCIPYS~1.PYD|scipy.sparse.csgraph._min_spanning_tree.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.csgraph._min_spanning_tree.pyd" SelfReg="false" NextFile="scipy.sparse.csgraph._shortest_path.pyd"/>
+    <ROW File="scipy.sparse.csgraph._shortest_path.pyd" Component_="_clipper.pyd" FileName="SCIPYS~2.PYD|scipy.sparse.csgraph._shortest_path.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.csgraph._shortest_path.pyd" SelfReg="false" NextFile="scipy.sparse.csgraph._tools.pyd"/>
+    <ROW File="scipy.sparse.csgraph._tools.pyd" Component_="_clipper.pyd" FileName="SCIPYS~3.PYD|scipy.sparse.csgraph._tools.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.csgraph._tools.pyd" SelfReg="false" NextFile="scipy.sparse.csgraph._traversal.pyd"/>
+    <ROW File="scipy.sparse.csgraph._traversal.pyd" Component_="_clipper.pyd" FileName="SCIPYS~4.PYD|scipy.sparse.csgraph._traversal.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.csgraph._traversal.pyd" SelfReg="false" NextFile="scipy.sparse.linalg.dsolve._superlu.pyd"/>
+    <ROW File="scipy.sparse.linalg.dsolve._superlu.pyd" Component_="_clipper.pyd" FileName="SCIPYS~5.PYD|scipy.sparse.linalg.dsolve._superlu.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.linalg.dsolve._superlu.pyd" SelfReg="false" NextFile="scipy.sparse.linalg.eigen.arpack._arpack.pyd"/>
+    <ROW File="scipy.sparse.linalg.eigen.arpack._arpack.pyd" Component_="_clipper.pyd" FileName="SCIPYS~6.PYD|scipy.sparse.linalg.eigen.arpack._arpack.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.linalg.eigen.arpack._arpack.pyd" SelfReg="false" NextFile="scipy.sparse.linalg.isolve._iterative.pyd"/>
+    <ROW File="scipy.sparse.linalg.isolve._iterative.pyd" Component_="_clipper.pyd" FileName="SCIPYS~7.PYD|scipy.sparse.linalg.isolve._iterative.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.linalg.isolve._iterative.pyd" SelfReg="false" NextFile="scipy.sparse.sparsetools._bsr.pyd"/>
+    <ROW File="scipy.sparse.sparsetools._bsr.pyd" Component_="_clipper.pyd" FileName="SCIPYS~8.PYD|scipy.sparse.sparsetools._bsr.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.sparsetools._bsr.pyd" SelfReg="false" NextFile="scipy.sparse.sparsetools._coo.pyd"/>
+    <ROW File="scipy.sparse.sparsetools._coo.pyd" Component_="_clipper.pyd" FileName="SCIPYS~9.PYD|scipy.sparse.sparsetools._coo.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.sparsetools._coo.pyd" SelfReg="false" NextFile="scipy.sparse.sparsetools._csc.pyd"/>
+    <ROW File="scipy.sparse.sparsetools._csc.pyd" Component_="_clipper.pyd" FileName="SCIPY~13.PYD|scipy.sparse.sparsetools._csc.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.sparsetools._csc.pyd" SelfReg="false" NextFile="scipy.sparse.sparsetools._csgraph.pyd"/>
+    <ROW File="scipy.sparse.sparsetools._csgraph.pyd" Component_="_clipper.pyd" FileName="SCIPY~14.PYD|scipy.sparse.sparsetools._csgraph.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.sparsetools._csgraph.pyd" SelfReg="false" NextFile="scipy.sparse.sparsetools._csr.pyd"/>
+    <ROW File="scipy.sparse.sparsetools._csr.pyd" Component_="_clipper.pyd" FileName="SCIPY~15.PYD|scipy.sparse.sparsetools._csr.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.sparsetools._csr.pyd" SelfReg="false" NextFile="scipy.sparse.sparsetools._dia.pyd"/>
+    <ROW File="scipy.sparse.sparsetools._dia.pyd" Component_="_clipper.pyd" FileName="SCIPY~16.PYD|scipy.sparse.sparsetools._dia.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.sparse.sparsetools._dia.pyd" SelfReg="false" NextFile="scipy.spatial._distance_wrap.pyd"/>
+    <ROW File="scipy.spatial._distance_wrap.pyd" Component_="_clipper.pyd" FileName="SCIPY~17.PYD|scipy.spatial._distance_wrap.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.spatial._distance_wrap.pyd" SelfReg="false" NextFile="scipy.spatial.ckdtree.pyd"/>
+    <ROW File="scipy.spatial.ckdtree.pyd" Component_="_clipper.pyd" FileName="SCIPY~18.PYD|scipy.spatial.ckdtree.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.spatial.ckdtree.pyd" SelfReg="false" NextFile="scipy.spatial.qhull.pyd"/>
+    <ROW File="scipy.spatial.qhull.pyd" Component_="_clipper.pyd" FileName="SCIPY~19.PYD|scipy.spatial.qhull.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.spatial.qhull.pyd" SelfReg="false" NextFile="scipy.special._ufuncs.pyd"/>
+    <ROW File="scipy.special._ufuncs.pyd" Component_="_clipper.pyd" FileName="SCIPY~20.PYD|scipy.special._ufuncs.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.special._ufuncs.pyd" SelfReg="false" NextFile="scipy.special._ufuncs_cxx.pyd"/>
+    <ROW File="scipy.special._ufuncs_cxx.pyd" Component_="_clipper.pyd" FileName="SCIPY~21.PYD|scipy.special._ufuncs_cxx.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.special._ufuncs_cxx.pyd" SelfReg="false" NextFile="scipy.special.specfun.pyd"/>
+    <ROW File="scipy.special.specfun.pyd" Component_="_clipper.pyd" FileName="SCIPY~22.PYD|scipy.special.specfun.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\scipy.special.specfun.pyd" SelfReg="false" NextFile="select.pyd"/>
+    <ROW File="select.pyd" Component_="_clipper.pyd" FileName="select.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\select.pyd" SelfReg="false" NextFile="shibokenpython2.7.dll"/>
+    <ROW File="shibokenpython2.7.dll" Component_="shibokenpython2.7.dll" FileName="SHIBOK~1.DLL|shiboken-python2.7.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\shiboken-python2.7.dll" SelfReg="false" NextFile="sip.pyd"/>
+    <ROW File="sip.pyd" Component_="_clipper.pyd" FileName="sip.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\sip.pyd" SelfReg="false" NextFile="sqlalchemy.cprocessors.pyd"/>
+    <ROW File="sqlalchemy.cprocessors.pyd" Component_="_clipper.pyd" FileName="SQLALC~1.PYD|sqlalchemy.cprocessors.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\sqlalchemy.cprocessors.pyd" SelfReg="false" NextFile="sqlalchemy.cresultproxy.pyd"/>
+    <ROW File="sqlalchemy.cresultproxy.pyd" Component_="_clipper.pyd" FileName="SQLALC~2.PYD|sqlalchemy.cresultproxy.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\sqlalchemy.cresultproxy.pyd" SelfReg="false" NextFile="sqlalchemy.cutils.pyd"/>
+    <ROW File="sqlalchemy.cutils.pyd" Component_="_clipper.pyd" FileName="SQLALC~3.PYD|sqlalchemy.cutils.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\sqlalchemy.cutils.pyd" SelfReg="false" NextFile="sqlite3.dll"/>
+    <ROW File="sqlite3.dll" Component_="sqlite3.dll" FileName="sqlite3.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\sqlite3.dll" SelfReg="false" NextFile="sympy.mpmath.libmp.exec_py3.py"/>
+    <ROW File="stock_close.ppm" Component_="back.png" FileName="STOCK_~1.PPM|stock_close.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_close.ppm" SelfReg="false" NextFile="stock_close.xpm"/>
+    <ROW File="stock_close.xpm" Component_="back.png" FileName="STOCK_~1.XPM|stock_close.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_close.xpm" SelfReg="false" NextFile="stock_down.ppm"/>
+    <ROW File="stock_down.ppm" Component_="back.png" FileName="STOCK_~2.PPM|stock_down.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_down.ppm" SelfReg="false" NextFile="stock_down.xpm"/>
+    <ROW File="stock_down.xpm" Component_="back.png" FileName="STOCK_~2.XPM|stock_down.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_down.xpm" SelfReg="false" NextFile="stock_left.ppm"/>
+    <ROW File="stock_left.ppm" Component_="back.png" FileName="STOCK_~3.PPM|stock_left.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_left.ppm" SelfReg="false" NextFile="stock_left.xpm"/>
+    <ROW File="stock_left.xpm" Component_="back.png" FileName="STOCK_~3.XPM|stock_left.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_left.xpm" SelfReg="false" NextFile="stock_refresh.ppm"/>
+    <ROW File="stock_refresh.ppm" Component_="back.png" FileName="STOCK_~4.PPM|stock_refresh.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_refresh.ppm" SelfReg="false" NextFile="stock_refresh.xpm"/>
+    <ROW File="stock_refresh.xpm" Component_="back.png" FileName="STOCK_~4.XPM|stock_refresh.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_refresh.xpm" SelfReg="false" NextFile="stock_right.ppm"/>
+    <ROW File="stock_right.ppm" Component_="back.png" FileName="STOCK_~5.PPM|stock_right.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_right.ppm" SelfReg="false" NextFile="stock_right.xpm"/>
+    <ROW File="stock_right.xpm" Component_="back.png" FileName="STOCK_~5.XPM|stock_right.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_right.xpm" SelfReg="false" NextFile="stock_save_as.ppm"/>
+    <ROW File="stock_save_as.ppm" Component_="back.png" FileName="STOCK_~6.PPM|stock_save_as.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_save_as.ppm" SelfReg="false" NextFile="stock_save_as.xpm"/>
+    <ROW File="stock_save_as.xpm" Component_="back.png" FileName="STOCK_~6.XPM|stock_save_as.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_save_as.xpm" SelfReg="false" NextFile="stock_up.ppm"/>
+    <ROW File="stock_up.ppm" Component_="back.png" FileName="stock_up.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_up.ppm" SelfReg="false" NextFile="stock_up.xpm"/>
+    <ROW File="stock_up.xpm" Component_="back.png" FileName="stock_up.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_up.xpm" SelfReg="false" NextFile="stock_zoomin.ppm"/>
+    <ROW File="stock_zoomin.ppm" Component_="back.png" FileName="STOCK_~7.PPM|stock_zoom-in.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_zoom-in.ppm" SelfReg="false" NextFile="stock_zoomin.xpm"/>
+    <ROW File="stock_zoomin.xpm" Component_="back.png" FileName="STOCK_~7.XPM|stock_zoom-in.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_zoom-in.xpm" SelfReg="false" NextFile="stock_zoomout.ppm"/>
+    <ROW File="stock_zoomout.ppm" Component_="back.png" FileName="STOCK_~8.PPM|stock_zoom-out.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_zoom-out.ppm" SelfReg="false" NextFile="stock_zoomout.xpm"/>
+    <ROW File="stock_zoomout.xpm" Component_="back.png" FileName="STOCK_~8.XPM|stock_zoom-out.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\stock_zoom-out.xpm" SelfReg="false" NextFile="subplots.png"/>
+    <ROW File="subplots.png" Component_="back.png" FileName="subplots.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\subplots.png" SelfReg="false" NextFile="subplots.ppm"/>
+    <ROW File="subplots.ppm" Component_="back.png" FileName="subplots.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\subplots.ppm" SelfReg="false" NextFile="subplots.xpm"/>
+    <ROW File="subplots.xpm" Component_="back.png" FileName="subplots.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\subplots.xpm" SelfReg="false" NextFile="zoom_to_rect.png"/>
+    <ROW File="sympy.mpmath.libmp.exec_py3.py" Component_="_clipper.pyd" FileName="SYMPYM~1.PY|sympy.mpmath.libmp.exec_py3.py" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\sympy.mpmath.libmp.exec_py3.py" SelfReg="false" NextFile="unicodedata.pyd"/>
+    <ROW File="unicodedata.pyd" Component_="_clipper.pyd" FileName="UNICOD~1.PYD|unicodedata.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\unicodedata.pyd" SelfReg="false" NextFile="win32api.pyd"/>
+    <ROW File="win32api.pyd" Component_="_clipper.pyd" FileName="win32api.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\win32api.pyd" SelfReg="false" NextFile="win32pdh.pyd"/>
+    <ROW File="win32pdh.pyd" Component_="_clipper.pyd" FileName="win32pdh.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\win32pdh.pyd" SelfReg="false" NextFile="win32pipe.pyd"/>
+    <ROW File="win32pipe.pyd" Component_="_clipper.pyd" FileName="WIN32P~1.PYD|win32pipe.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\win32pipe.pyd" SelfReg="false" NextFile="win32wnet.pyd"/>
+    <ROW File="win32wnet.pyd" Component_="_clipper.pyd" FileName="WIN32W~1.PYD|win32wnet.pyd" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\win32wnet.pyd" SelfReg="false" NextFile="zlib1.dll"/>
+    <ROW File="zlib1.dll" Component_="zlib1.dll" FileName="zlib1.dll" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\zlib1.dll" SelfReg="false" NextFile="About.png"/>
+    <ROW File="zoom_to_rect.png" Component_="back.png" FileName="ZOOM_T~1.PNG|zoom_to_rect.png" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\zoom_to_rect.png" SelfReg="false" NextFile="zoom_to_rect.ppm"/>
+    <ROW File="zoom_to_rect.ppm" Component_="back.png" FileName="ZOOM_T~1.PPM|zoom_to_rect.ppm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\zoom_to_rect.ppm" SelfReg="false" NextFile="zoom_to_rect.svg"/>
+    <ROW File="zoom_to_rect.svg" Component_="back.png" FileName="ZOOM_T~1.SVG|zoom_to_rect.svg" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\zoom_to_rect.svg" SelfReg="false" NextFile="zoom_to_rect.xpm"/>
+    <ROW File="zoom_to_rect.xpm" Component_="back.png" FileName="ZOOM_T~1.XPM|zoom_to_rect.xpm" Attributes="0" SourcePath="..\OptolithiumGui\build\exe.win32-2.7\mpl-data\images\zoom_to_rect.xpm" SelfReg="false" NextFile="lineprops.glade"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="GPL-V2.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText_2" MsiKey="LicenseAgreementDlg#AgreementText"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="Optolithium_Dir" Component_="Optolithium" ManualDelete="false"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Type="1" Source="aicustact.dll" Target="MixedAllUsersInstallLocation"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[AI_UserProgramFiles]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFoldermsiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
+    <ROW Name="icon_1.exe" SourcePath="..\OptolithiumGui\icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="URL" FileName="Home.url" DirProperty="SHORTCUTDIR" Section="InternetShortcut" Key="URL" Value="https://bitbucket.org/gladkikhalexei/optolithium/overview" Action="0" Component_="About.png"/>
+    <ROW IniFile="URL_1" FileName="Home.url" DirProperty="Optolithium_Dir" Section="InternetShortcut" Key="URL" Value="https://bitbucket.org/gladkikhalexei/optolithium/overview" Action="0" Component_="About.png"/>
+    <ROW IniFile="WorkingDirectory" FileName="Home.url" DirProperty="SHORTCUTDIR" Section="InternetShortcut" Key="WorkingDirectory" Value="[SHORTCUTDIR]" Action="0" Component_="About.png"/>
+    <ROW IniFile="WorkingDirectory_1" FileName="Home.url" DirProperty="Optolithium_Dir" Section="InternetShortcut" Key="WorkingDirectory" Value="[Optolithium_Dir]" Action="0" Component_="About.png"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Sequence="748"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_DpiContentScale" Sequence="51"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Sequence="748"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT40Display]" DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Optolithium" Directory_="SHORTCUTDIR" Name="OPTOLI~1|Optolithium" Component_="optolithium.exe" Target="[#optolithium.exe]" Description="Open Source Optical Lithography Simulation Software" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Optolithium_1" Directory_="Optolithium_Dir" Name="OPTOLI~1|Optolithium" Component_="optolithium.exe" Target="[#optolithium.exe]" Description="Open Source Optical Lithography Simulation Software" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Optolithium_2" Directory_="DesktopFolder" Name="OPTOLI~1|Optolithium" Component_="optolithium.exe" Target="[#optolithium.exe]" Description="Open Source Optical Lithography Simulation Software" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="SharedData" Directory_="Optolithium_Dir" Name="SHARED~1|Shared Data" Component_="zlib1.dll" Target="[data_Dir]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="SharedData_1" Directory_="SHORTCUTDIR" Name="SHARED~1|Shared Data" Component_="zlib1.dll" Target="[data_Dir]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="Uninstall" Directory_="Optolithium_Dir" Name="UNINST~1|Uninstall" Component_="zlib1.dll" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="Uninstall_1" Directory_="SHORTCUTDIR" Name="UNINST~1|Uninstall" Component_="zlib1.dll" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
