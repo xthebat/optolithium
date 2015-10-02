@@ -160,6 +160,9 @@ SharedResistVolume aerial_image(SharedDiffraction diffraction, SharedOpticalTran
 	LOG(INFO) << "Optolithium Core: Calculate aerial image";
 	double refractive_index = physc::air_nk.real();
 	if (otf->wafer_stack()) {
+		if (!otf->wafer_stack()->environment()) {
+			throw std::invalid_argument("Environment was not specified");
+		}
 		double wavelength = diffraction->wavelength;
 		refractive_index = otf->wafer_stack()->environment()->refraction(wavelength).real();
 	}
