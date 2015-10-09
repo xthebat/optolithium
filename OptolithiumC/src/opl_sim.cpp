@@ -177,6 +177,12 @@ SharedResistVolume image_in_resist(SharedDiffraction diffraction,
 		SharedOpticalTransferFunction otf, double stepxy, double stepz) {
 	LOG(INFO) << "Optolithium Core: Calculate image in resist";
 	double wavelength = diffraction->wavelength;
+	if (!otf->wafer_stack()) {
+		throw std::invalid_argument("Wafer stack was not specified");
+	}
+	if (!otf->wafer_stack()->resist()) {
+		throw std::invalid_argument("Resist was not specified");
+	}
 	double refractive_index = otf->wafer_stack()->resist()->refraction(wavelength).real();
 	double thickness = otf->wafer_stack()->resist()->thickness;
 	SharedResistVolume result = std::make_shared<ResistVolume>(diffraction->boundary, thickness, stepxy, stepz);
