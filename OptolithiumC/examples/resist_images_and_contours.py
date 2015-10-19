@@ -1,5 +1,3 @@
-import time
-
 __author__ = 'OlaPsema'
 
 import optolithiumc as oplc
