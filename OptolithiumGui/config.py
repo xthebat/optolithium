@@ -28,6 +28,7 @@ import json
 import logging as module_logging
 import sys
 import helpers
+import ctypes
 
 
 __author__ = 'Alexei Gladkikh'
@@ -113,7 +114,13 @@ OPTIONS_EXTENSION = "Optolithium options (*.opl)"
 
 KLAYOUT_PATH = "klayout"
 
-HOME_PATH = os.path.expanduser("~")
+if sys.platform == nt:
+    buf = ctypes.create_unicode_buffer(1024)
+    ctypes.windll.kernel32.GetEnvironmentVariableW(u"USERPROFILE", buf, 1024)
+    HOME_PATH = buf.value
+else:
+    HOME_PATH = os.path.expanduser("~")
+
 APPLICATION_DIRECTORY = "." + APPLICATION_NAME
 CONFIG_NAME = "config.json"
 
