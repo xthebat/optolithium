@@ -1,6 +1,6 @@
 # Optolithium #
 
-![Logo.png](https://bitbucket.org/repo/AzXMMM/images/2525627138-Logo.png)
+![Logo.png](https://github.com/xthebat/optolithium/blob/master/Logo.png)
 
 ## What is it? ##
 
@@ -16,10 +16,10 @@ Optolithium is a optical lithography (see [Photolithography](http://en.wikipedia
 Also automated simulation set with variating at most two parameters is available.
 At this time only 2D resist profile modelling is implemented but one of roadmap's point is add 3D simulation possibility. The following figure denotes resist profile simulations results for 365 nm technological process:
 
-![Optolithium-Profile.png](https://bitbucket.org/repo/AzXMMM/images/3359108389-Optolithium-Profile.png)
+![Optolithium-Profile.png](https://github.com/xthebat/optolithium/blob/master/Profile.png)
 Screenshot of the main window of Optolithium software with simulation results of aerial image in resist as distribution of light intensity. Also an effect of standing waves could be seen in this figure.  
 
-![Optolithium_IR.png](https://bitbucket.org/repo/AzXMMM/images/50062255-Optolithium_IR.png)
+![Optolithium_IR.png](https://github.com/xthebat/optolithium/blob/master/Profile_IR.png)
 
 ## Papers
 
