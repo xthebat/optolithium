@@ -25,10 +25,10 @@ Screenshot of the main window of Optolithium software with simulation results of
 
 Note: all papers made in Russian language.
 
-![Optical lithography basics](https://github.com/xthebat/optolithium/releases/download/papers/Optical.Lithography.Simulation.Basics.pdf)
-![Lithography lecture](https://github.com/xthebat/optolithium/releases/download/papers/4.Lecture.ppt.pdf)
-![Simulation lecture](https://github.com/xthebat/optolithium/releases/download/papers/7.Lecture.ppt.pdf)
-![Optolithium lecture](https://github.com/xthebat/optolithium/releases/download/papers/8.Lecture.ppt.pdf)
+- ![Optical lithography basics](https://github.com/xthebat/optolithium/releases/download/papers/Optical.Lithography.Simulation.Basics.pdf)
+- ![Lithography lecture](https://github.com/xthebat/optolithium/releases/download/papers/4.Lecture.ppt.pdf)
+- ![Simulation lecture](https://github.com/xthebat/optolithium/releases/download/papers/7.Lecture.ppt.pdf)
+- ![Optolithium lecture](https://github.com/xthebat/optolithium/releases/download/papers/8.Lecture.ppt.pdf)
 
 ## What are internals? ##
 
